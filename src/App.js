@@ -1,9 +1,13 @@
-import React from 'react';
+import React from "react";
+import PersonCard from "./components/PersonCard";
 
 const App = () => {
-  return ( 
-    <h1>Employee Portal!</h1>
-   );
-}
- 
+  return (
+    <div>
+      <h1>Employee Portal!</h1>
+      <PersonCard />
+    </div>
+  );
+};
+
 export default App;

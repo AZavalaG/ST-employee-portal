@@ -1,8 +1,13 @@
 import React from 'react';
+import Navbar from './Components/Navbar';
+
+import './styles.css';
 
 const App = () => {
   return ( 
-    <h1>Employee Portal!</h1>
+    <>
+      <Navbar />
+    </>   
    );
 }
  

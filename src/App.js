@@ -1,13 +1,15 @@
-import React from "react";
-import { ScreenTitleBar } from "./Components";
+import React from 'react';
+import { ScreenTitleBarTeams } from './Components/index';
+
 
 const App = () => {
   return (
     <div>
       <h1>Employee Portal!</h1>
-      <ScreenTitleBar name={"Name Last Name"} />
+      <ScreenTitleBarTeams/>
     </div>
   );
-};
+}
 
 export default App;
+

@@ -1,1 +1,1 @@
-export * from './ScreenTitleBar/ScreenTitleBar';
+export * from './ScreenTitleBarTeams/ScreenTitleBarTeams';

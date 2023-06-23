@@ -56,7 +56,6 @@
   width: 101px;
   height: 58px;
   flex-shrink: 0;
-  background: url(../assets/flags/mex.png), lightgray 50% / cover no-repeat;
   margin-right: auto;
   margin-left: auto;
   margin-top: 12px;
@@ -77,6 +76,9 @@
   font-size: 16px;
   font-family: Roboto;
   font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .person-card-edit-button:hover{
   cursor: pointer;

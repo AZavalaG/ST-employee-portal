@@ -44,6 +44,10 @@ ul {
  
 }
 
+.nav-item:hover {
+    cursor: pointer;
+}
+
 .space-between_item{
     padding-left: 1.56rem;
     padding-right: 1.56rem;

@@ -1,5 +1,5 @@
 import React from "react";
-import PersonCard from "./components/PersonCard";
+import PersonCard from "./components/PersonCard/PersonCard";
 
 const App = () => {
   return (

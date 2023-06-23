@@ -1,0 +1,85 @@
+.layout {
+  width: 386px;
+  height: 711px;
+  flex-shrink: 0;
+  border-radius: 23px;
+  border: 3px solid var(--purple, #6423b5);
+  background: #f6f2f2;
+  padding: 16px;
+  flex-direction: column;
+  display: flex;
+}
+.profile-image-space {
+  width: 118px;
+  height: 171px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.profile-image-content {
+  width: 118px;
+  height: 118px;
+  border-radius: 188px;
+  border: 3px solid #000;
+  background: #d9d9d9;
+  background: url(../assets/background/image\ 2.png),
+    lightgray 50% / cover no-repeat;
+}
+
+.label-name {
+  color: #6423b5;
+  text-align: center;
+  font-size: 24px;
+  font-family: Roboto;
+  font-weight: 700;
+}
+.label-variable {
+  margin-top: 12px;
+  color: #979797;
+  text-align: center;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 700;
+}
+.label-value {
+  color: #4049bf;
+  text-align: center;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 700;
+}
+.container-flag {
+  width: 101px;
+  height: 58px;
+  flex-shrink: 0;
+  background: url(../assets/flags/mex.png), lightgray 50% / cover no-repeat;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 12px;
+
+}
+.person-card-edit-button {
+  width: 229px;
+  height: 49px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid var(--purple, #6423b5);
+  background: var(--purple, #6423b5);
+  margin-top: 90px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 700;
+}
+.person-card-edit-button:hover{
+  cursor: pointer;
+  background-color: #4049BF;
+  border-color: #4049BF;
+}

@@ -2,6 +2,8 @@ import React from "react";
 import "./styles/PersonCard.css";
 import EditIcon from "./assets/icons/Edit_fill.svg";
 import Flag from "./assets/flags/mex.png";
+
+
 export default function PersonCard(props) {
   const { DataUser } = props;
 const handleClick=()=>{

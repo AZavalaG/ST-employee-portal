@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    width: 1103px;
+    height: 35px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    font-size: 0.875rem/* 14px */;
+    line-height: 1.25rem/* 20px */;
+    font-weight: 300;
+    flex-shrink: 0;
+    background: #393939;
+    border-radius: 20px;
+}
+
+.navbar > .nav-content {
+    padding-left: 56px;
+}
+
+.nav-content{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem/* 12px */;
+}
+
+.ul-no_style {
+   list-style: none;
+}
+
+.nav-item {
+   color: #F6F2F2;
+   text-align: center;
+   font-size: 16px;
+   font-family: Roboto;
+   font-weight: 700;
+ 
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
+
+.space-between_item{
+    padding-left: 1.56rem;
+    padding-right: 1.56rem;
+}
+
+.destructive {
+    color: #FF5C60;
+}
+
+.profilePicture{
+    height: 3.875rem;
+    width: 3.875rem;
+    margin-top: 1.5rem;
+}
+
+.rounded-photo{
+    object-fit: cover;
+    border-radius: 50%;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+}
+
+.link-item:hover {
+  animation-duration: 0.5s;
+  animation-name: overitem;
+  animation-fill-mode: forwards;
+}
+
+@keyframes overitem {
+
+    to {
+        color: #979797;
+    }
+}
+
+/*.img-container{
+    height: 3.25rem;
+    width: 3.25rem;
+    padding-right: 5.875rem;
+    padding-bottom: 0.9rem;
+}  */

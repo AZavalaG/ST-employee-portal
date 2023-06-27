@@ -1,14 +1,13 @@
-import React from 'react';
-import Navbar from './Components/Navbar';
-
-import './styles.css';
+import React from "react";
 
 const App = () => {
-  return ( 
-    <>
-      <Navbar />
-    </>   
-   );
-}
- 
-export default App;
+  return (
+
+    <div>
+      <h1>Employee Portal!</h1>
+     
+    </div>
+  );
+
+export default App; 
+

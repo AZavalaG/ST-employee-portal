@@ -91,65 +91,69 @@ const UserInformation02 = () => {
           <p className={styles.pInfo}>
             Select Phases you want to include into the Project's structure
           </p>
+
           <div className={styles.selecBox}>
-            <input
-              type="checkbox"
+
+            <label className={styles.container}>
+            Ceremonies
+              <input type="checkbox" 
               id="ceremonies"
               value="ceremonies"
               checked={selectedPhases.includes("ceremonies")}
-              onChange={handlePhaseSelectionChange}
-            />
-            <label htmlFor="ceremonies">Ceremonies</label>
-          </div>
-
-          <div className={styles.selecBox}>
-            <input
-              type="checkbox"
+              onChange={handlePhaseSelectionChange}/>
+              <span className={styles.checkmark}></span>
+            </label>
+            
+            <label className={styles.container}>
+            Discovery
+              <input type="checkbox" 
               id="discovery"
               value="discovery"
               checked={selectedPhases.includes("discovery")}
-              onChange={handlePhaseSelectionChange}
-            />
-            <label htmlFor="discovery">Discovery</label>
-          </div>
+              onChange={handlePhaseSelectionChange}/>
+              <span className={styles.checkmark}></span>
+            </label>
 
-          <div className={styles.selecBox}>
-            <input
-              type="checkbox"
+            <label className={styles.container}>
+            Planning
+              <input type="checkbox" 
               id="planning"
               value="planning"
               checked={selectedPhases.includes("planning")}
-              onChange={handlePhaseSelectionChange}
-            />
-            <label htmlFor="planning">Planning</label>
-          </div>
+              onChange={handlePhaseSelectionChange}/>
+              <span className={styles.checkmark}></span>
+            </label>
 
-          <div className={styles.selecBox}>
-            <input
-              type="checkbox"
+            <label className={styles.container}>
+            Development
+              <input type="checkbox" 
               id="development"
               value="development"
               checked={selectedPhases.includes("development")}
-              onChange={handlePhaseSelectionChange}
-            />
-            <label htmlFor="development">Development</label>
-          </div>
+              onChange={handlePhaseSelectionChange}/>
+              <span className={styles.checkmark}></span>
+            </label>
 
-          <div className={styles.selecBox}>
-            <input
-              type="checkbox"
+            <label className={styles.container}>
+            Training
+              <input type="checkbox" 
               id="training"
               value="training"
               checked={selectedPhases.includes("training")}
-              onChange={handlePhaseSelectionChange}
-            />
-            <label htmlFor="training">Training</label>
+              onChange={handlePhaseSelectionChange}/>
+              <span className={styles.checkmark}></span>
+            </label>
+
           </div>
+
+
         </div>
 
         <div className={styles.people}>
           <h2>People</h2>
-          <p className={styles.pInfo}>Add person's email to add them to the project</p>
+          <p className={styles.pInfo}>
+            Add person's email to add them to the project
+          </p>
           <div>
             <input
               type="email"
@@ -158,15 +162,21 @@ const UserInformation02 = () => {
               className={styles.inputEmail}
               placeholder="Email"
             />
-            <button type="button" onClick={handleAddPerson} className={styles.btnEmailAdd}>
+            <button
+              type="button"
+              onClick={handleAddPerson}
+              className={styles.btnEmailAdd}
+            >
               Add
             </button>
-            
+
             <p className={styles.pInfo}>Registered:</p>
 
             <div className={styles.emailsDiv}>
               {people.map((person, index) => (
-                <div><strong key={index}>{person}</strong></div>
+                <div>
+                  <strong key={index}>{person}</strong>
+                </div>
               ))}
             </div>
           </div>

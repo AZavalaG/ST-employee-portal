@@ -1,8 +1,11 @@
-@font-face {
+/*@font-face {
     font-family: 'Montserrat';
     src: url('../fonts/Montserrat.zip') format('truetype');
-    /* Añade aquí otras variantes de la fuente si las tienes */
-  }
+     Añade aquí otras variantes de la fuente si las tienes 
+  }*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
   
   
   
@@ -15,6 +18,7 @@ button {
     margin: 5px;
     border-radius: 2em;
     border-style: none;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 12px;
     color: white;

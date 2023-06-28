@@ -1,6 +1,6 @@
 import React from "react";
 import styles from  '../ScreenTitleBar/screenTitleBar.module.css'
-import iconBack from '../../Images/back-cta.png'
+import iconBack from '../../Assets/back-cta.png'
 export const ScreenTitleBar = ({ name = "" }) => {
 
   const handleBack = ()=> {

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+   --purple :#6423B5;
+   --blue  :#4049BF;
+   --gray-1  :#393939;
+   --gray-2  :#979797;
+   --gray-3  :#D0D0D0;
+   --gray-4  :#F6F2F2;
+   --placeholder  :#83859C;
+   --error  :#FF5C60;
+   --link  :#808080;
+   --negro: #0000;
+   --blanco:#fff;
+}
+
+.title{
+    color: var(--blue);
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 700;
+}
+
+.inputplaceholder{
+    background-color: var(--gray-3);
+    width: 429px;
+    height: 46px;
+    border-radius: 14px;
+    border: none;
+    padding-left: 15px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.inputMargin {
+    margin-right: 57px;
+}
+
+.subtitulo{
+    color: var(--gray-2);
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.title1{
+    padding: 22px;
+}
+
+.title2{
+    margin-bottom: -8px;
+    margin-top: 33px;
+}
+
+input:checked{
+    background-color: var(--gray-1);
+}
+
+.checkboxes{
+    margin-top: 15px;
+}
+
+.checklist{
+    margin-right: 17px;
+}
+
+.labelCheck{
+    color: var(--gray-1);
+    font-size: 13px;
+    font-weight: 700;
+}

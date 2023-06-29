@@ -1,14 +1,11 @@
-import React from 'react';
-import styles from "./Styles/app.module.css";
-import CardList from "./components/CardList";
+import React from "react";
 
 const App = () => {
-  return ( 
-    <main className={styles.main}>
-      <h1>Employee Portal MY BRANCH!</h1>
-      <CardList />
-    </main>
-   );
-}
- 
+  return (
+    <div>
+      <h1>Employee Portal!</h1>
+    </div>
+  );
+};
+
 export default App;

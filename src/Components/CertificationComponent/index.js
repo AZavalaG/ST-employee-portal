@@ -1,6 +1,6 @@
 import styles from "../Styles/card.module.css";
 
-const Card = ({ title, description }) => {
+const CertificationComponent = ({ title, description }) => {
   return (
     <div className={styles.card}>
       <h2 className={styles.cardTitle}>{title}</h2>
@@ -9,4 +9,4 @@ const Card = ({ title, description }) => {
   );
 };
 
-export default Card;
+export default CertificationComponent;

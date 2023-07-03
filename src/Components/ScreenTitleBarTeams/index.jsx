@@ -1,6 +1,7 @@
 import React from "react";
 import styles from  '../ScreenTitleBarTeams/screenTitleBarTeams.module.css'
 import imgBack from '../../Assets/back-cta.png'
+
 export const ScreenTitleBarTeams = ({ name = "Team's" }) => {
   const handleBack = () => {
     

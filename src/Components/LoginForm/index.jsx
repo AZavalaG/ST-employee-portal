@@ -1,7 +1,7 @@
 import React from "react";
-import style from "./style.module.css";
+import style from "./logicForm.module.css";
 
-export const LoginForm = () => {
+const LoginForm = () => {
    
     return (
 
@@ -35,3 +35,5 @@ export const LoginForm = () => {
     );
 };
   
+
+export default LoginForm;

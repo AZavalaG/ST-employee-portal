@@ -1,7 +1,7 @@
 import React from "react";
-import style from "./style.module.css";
+import style from "./taskForm.module.css";
 
-export const Information = () => {
+export const TaskForm = () => {
    
     return (
       <div className={style.container}>
@@ -50,4 +50,6 @@ export const Information = () => {
       
     );
   };
-  
+
+
+export default TaskForm;

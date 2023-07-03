@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import styles from "./ModalWindow.module.css";
-import closeHandle from '../../Images/close-cta.png';
+import styles from "./modal.module.css";
+import closeHandle from '../../Assets/close-cta.png';
 
-function ModalWindow(props) {
+const ModalWindow = (props) => {
   if(!props.show) {
     return null;
   }

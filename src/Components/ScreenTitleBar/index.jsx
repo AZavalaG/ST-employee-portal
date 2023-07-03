@@ -1,7 +1,8 @@
 import React from "react";
 import styles from  '../ScreenTitleBar/screenTitleBar.module.css'
-import iconBack from '../../Assets/back-cta.png'
-export const ScreenTitleBar = ({ name = "" }) => {
+import iconBack from '../../Assets/back-cta.png';
+
+const ScreenTitleBar = ({ name = "" }) => {
 
   const handleBack = ()=> {
     
@@ -16,3 +17,5 @@ export const ScreenTitleBar = ({ name = "" }) => {
     </div>
   );
 };
+
+export default ScreenTitleBar;

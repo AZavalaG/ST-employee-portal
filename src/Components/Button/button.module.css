@@ -5,10 +5,6 @@
   }*/
 
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-
-  
-  
-  
   
 button {
     padding-top: 10px;
@@ -35,33 +31,33 @@ button:active {
     color: #333333;
   }
 
-.button-error {
+.buttonError {
     background-color: #FF5C60;
     /* Otros estilos específicos para el tipo 'error' */
   }
   
-  .button-alert {
+  .buttonAlert{
     background-color: #FF5C60;
     /* Otros estilos específicos para el tipo 'alert' */
   }
   
-  .button-info {
+  .buttonInfo {
     background-color: #4049BF;
     /* Otros estilos específicos para el tipo 'info' */
   }
   
-  .button-success {
+  .buttonSuccess{
     background-color: #4049BF;
     /* Otros estilos específicos para el tipo 'success' */
   }
   
   /* Estilos comunes para todos los tipos de botón */
-  .button-default {
+  .buttonDefault{
     background-color: #979797;
     /* Otros estilos comunes */
   }
 
-  .button-inactive {
+  .buttonInactive{
     background-color: #D0D0D0;
     /* Otros estilos comunes */
   }

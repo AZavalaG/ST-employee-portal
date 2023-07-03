@@ -1,5 +1,5 @@
 import React from "react";
-import './Styles/Styles.css';
+import styles from './button.module.css';
 
 /*Autor: Christian Laurian 
 date : 23/jun/2023
@@ -17,22 +17,22 @@ const Button = ({ type, content }) => {
     //Determinar el estilo del boton segun el tipo
     switch (type) {
         case 'error':
-            buttonStyle = 'button-error';
+            buttonStyle = styles.buttonError;
             break;
         case 'alert':
-            buttonStyle = 'button-alert';
+            buttonStyle = styles.buttonAlert;
             break;
         case 'info':
-            buttonStyle = 'button-info';
+            buttonStyle = styles.buttonInfo;
             break;
         case 'success':
-            buttonStyle = 'button-success';
+            buttonStyle = styles.buttonSuccess;
             break;
             case 'inactive':
-            buttonStyle = 'button-inactive';
+            buttonStyle = styles.buttonInactive;
             break;
         default:
-            buttonStyle = 'button-default';
+            buttonStyle = styles.buttonDefault;
             break;
     }
 

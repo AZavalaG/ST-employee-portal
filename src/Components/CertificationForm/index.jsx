@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style/Certification.css";
+import styles from './certificationForm.module.css';
 
 export const initialForm = {
   Name: "",
@@ -10,7 +10,7 @@ export const initialForm = {
   IsExpire: false,
 };
 
-export default function Certification(props) {
+const CertificationForm = (props) => {
   const [createCertification, setCreateCertification] = useState(initialForm);
 
   const handleChange = (e) => {
@@ -26,15 +26,15 @@ export default function Certification(props) {
     console.log(createCertification);
   };
   return (
-    <div className="container-form">
-      <label className="title-form">Add Certification</label>
-      <label className="subtitle-form">
+    <div className={styles.containerForm}>
+      <label className={styles.titleForm}>Add Certification</label>
+      <label className={styles.subtitleForm}>
         Fill the following form to include a new certification
       </label>
       <input
         placeholder="Certification Name"
         type="text"
-        className="input-certification"
+        className={styles.inputCertification}
         name={"Name"}
         onChange={handleChange}
         value={createCertification.Name}
@@ -42,7 +42,7 @@ export default function Certification(props) {
       <input
         placeholder="Institution"
         type="text"
-        className="input-certification space-top"
+        className={`${styles.inputCertification} ${styles.spaceTop}`}
         name={"Institution"}
         onChange={handleChange}
         value={createCertification.Institution}
@@ -50,42 +50,44 @@ export default function Certification(props) {
       <input
         placeholder="Certification Link"
         type="text"
-        className="input-certification space-top"
+        className={`${styles.inputCertification} ${styles.spaceTop}`}
         name={"Link"}
         onChange={handleChange}
         value={createCertification.Link}
       />
-      <div className="calender-pickers">
-        <label className="date-label-form">Expedition Date:</label>
+      <div className={styles.calendarPickers}>
+        <label className={styles.dateLabelForm}>Expedition Date:</label>
         <input
           type="date"
-          className="input-calender"
+          className={styles.inputCalendar}
           name={"Expedition"}
           onChange={handleChange}
           value={createCertification.Expedition}
         ></input>
-        <label className="date-label-form label-space">Expiration Date:</label>
+        <label className={`${styles.dateLabelForm} ${styles.labelSpace}`}>Expiration Date:</label>
         <input
           type="date"
-          className="input-calender"
+          className={styles.inputCalendar}
           name={"Expiration"}
           onChange={handleChange}
           value={createCertification.Expiration}
         ></input>
       </div>
-      <div className="check-pickers">
+      <div className={styles.checkPickers}>
         <input
           type="checkbox"
-          className="check-box"
+          className={styles.checkBox}
           name={"IsExpire"}
           onChange={handleChange}
           checked={createCertification.IsExpire}
         />
-        <label className="check-label">Does not expire</label>
+        <label className={styles.checkLabel}>Does not expire</label>
       </div>
-      <button className="button-submit" onClick={onSubmit}>
+      <button className={styles.buttonSubmit} onClick={onSubmit}>
         Save Change
       </button>
     </div>
   );
 }
+
+export default CertificationForm;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import styles from "./styles.module.css";
+import styles from "./projectForm.module.css";
 
-const UserInformation02 = () => {
+const ProjectForm = () => {
   const [projectName, setProjectName] = useState("");
   const [projectCode, setProjectCode] = useState("");
   const [description, setDescription] = useState("");
@@ -188,4 +188,4 @@ const UserInformation02 = () => {
   );
 };
 
-export default UserInformation02;
+export default ProjectForm;

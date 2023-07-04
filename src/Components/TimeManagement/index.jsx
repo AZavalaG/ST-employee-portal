@@ -113,5 +113,5 @@ const TimeManagement = (props) => {
 export default TimeManagement;
 
 TimeManagement.defaultProps = {
-  user: "Manager",
+  user: "Dev",
 };

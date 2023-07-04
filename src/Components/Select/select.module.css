@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+.stSelect {
+    appearance: none;
+    font-size: 14px;
+    font-family: Roboto;
+    width: 114px;
+    height: 30px;
+    flex-shrink: 0;
+    background: var(--gray-3, #D0D0D0);
+    color: var(--gray-1, #393939);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 10px;
+    border: none;
+    padding-left: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 30px;
+    margin: 11px 0 7px 0;
+}
+
+.stSelect option {
+    border-radius: 10px;
+    background: var(--blue, #4049BF);
+    width: 114px;
+    height: 30px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.select {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.arrowIcon {
+    padding-top: 18.6px;
+    overflow: hidden;
+    position: absolute;
+    height: 17px;
+    left: calc(100% - 70px);
+    width: 17px;
+    z-index: 5;
+}

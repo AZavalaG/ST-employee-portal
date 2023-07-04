@@ -1,11 +1,9 @@
-import React from "react";
+import React from 'react';
 
 const App = () => {
-  return (
-    <div>
-      <h1>Employee Portal!</h1>
-    </div>
-  );
-};
-
+  return ( 
+    <h1>Employee Portal!</h1>
+   );
+}
+ 
 export default App;

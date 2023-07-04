@@ -147,7 +147,6 @@
   background: #fff;
   display: inline-flex;
   flex-direction: column;
-  columns: 2;
 }
 .columnListRight {
   width: 555px;

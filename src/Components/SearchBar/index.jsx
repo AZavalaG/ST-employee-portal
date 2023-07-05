@@ -23,7 +23,7 @@ export const SearchBar = () => {
             value={search}
             className={styles.input}
           />
-          <img className={styles.inputIcon} src={imgSearch} />
+          <img className={styles.inputIcon} src={imgSearch} alt=""/>
         </div>
         
         <button className="search-button" onClick={handleSearch}>

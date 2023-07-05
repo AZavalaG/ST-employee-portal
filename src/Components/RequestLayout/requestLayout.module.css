@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+h2 {
+  color: #4049BF;
+}
+table {
+  border: #b2b2b2 1px solid;
+}
+td, th {
+  border: black 1px solid;
+}

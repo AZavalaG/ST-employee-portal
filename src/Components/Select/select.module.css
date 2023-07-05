@@ -49,4 +49,5 @@
     left: calc(100% - 70px);
     width: 17px;
     z-index: 5;
+    pointer-events: none;
 }

@@ -6,15 +6,21 @@ import ItemCard from "../ItemCard";
 
 const TimeCardDetails = (props) => {
   const [show, setShow] = useState(false);
+  const [showApprovalModal, setShowApprovalModal] = useState(false);
+  const [showRejectionModal, setShowRejectionModal] = useState(false);
 
   return (
     <>
       <ItemCard onClick={() => setShow(true)} status={props.status} title={props.title} />
       <ModalWindow
         onClose={() => setShow(false)}
+        onAccept={() => {setShow(false); setShowApprovalModal(true);}}
+        onCancel={() => {setShow(false); setShowRejectionModal(true);}}
         show={show}
         title="Time Card Details"
         modalType="confirm"
+        acceptButtonValue="Approve"
+        cancelButtonValue="Reject"
       >
         <div id="after_submit"></div>
         <form
@@ -31,6 +37,20 @@ const TimeCardDetails = (props) => {
             <h2 className={styles.content}>{props.timeCardDate}</h2>
           </div>
         </form>
+      </ModalWindow>
+      <ModalWindow
+        onClose={() => setShowApprovalModal(false)}
+        show={showApprovalModal}
+        title="TimeCard Approved!"
+        hideCloseButton={true}
+      >
+      </ModalWindow>
+      <ModalWindow
+        onClose={() => setShowRejectionModal(false)}
+        show={showRejectionModal}
+        title="TimeCard Rejected!"
+        hideCloseButton={true}
+      >
       </ModalWindow>
     </>
   );

@@ -21,11 +21,14 @@ const ModalWindow = (props) => {
           </span>          
         </div>
         <div className={ true && props.children ? styles.modalContent : ''}>{props.children}</div>
-        {/* Temporary code */}
         <div className={styles.modalFooter}>
           {
-            props.modalType === 'confirm' ? <><input type='button' value='Accept' /> <input type='button' value='Cancel' onClick={props.onClose} /></>
-            : <input type='button' value='Close' onClick={props.onClose} />
+            props.modalType === 'confirm' ? 
+            <>
+              <input type='button' value={props.acceptButtonValue} onClick={props.onAccept} /> 
+             <input type='button' value={props.cancelButtonValue} onClick={props.onCancel} />
+            </>
+            : !props.hideCloseButton && <input type='button' value='Close' onClick={props.onClose} />
           }
         </div>
       </div>
@@ -36,10 +39,19 @@ const ModalWindow = (props) => {
 ModalWindow.propTypes = {
   title: PropTypes.string,
   modalType: PropTypes.string,
+  onAccept: PropTypes.func,
+  onCancel: PropTypes.func,
+  hideCloseButton: PropTypes.bool,
+  acceptButtonValue: PropTypes.string,
+  cancelButtonValue: PropTypes.string,
 }
 
 ModalWindow.defaultProps = {
   modalType: 'informative',
+  hideCloseButton: false,
+  acceptButtonValue: 'Accept',
+  cancelButtonValue: 'Cancel',
+  onCancel: () => {},
 }
 
 export default ModalWindow;

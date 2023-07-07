@@ -3,12 +3,6 @@ import React, { useEffect,useState, Component } from 'react';
 import Navbar from '../Navbar';
 import { SearchBar } from '../SearchBar';
 /*const role = localStorage.getItem("role");*/
-<<<<<<< HEAD
-=======
-import UserInfo from "./UserInfo";
-/*import UpdateProfile from "./UpdateProfile"*/
-/*import UpdateProfileHR from "./UpdateProfileHR"*/
->>>>>>> da8f944dda0d25f2fb783846ff3461a327f6add2
 import ColorBlock from '../ActionPanel';
 
 
@@ -140,8 +134,7 @@ const ProfileUsr = () => {
                             </div>
                         </form>
                     </div>
-                </div>
-                
+                </div>                
             </div>
         );
     }

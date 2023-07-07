@@ -5,6 +5,17 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+.central{
+    top: 50%; /* IMPORTANT */
+    left: 50%; /* IMPORTANT */
+    display: block;
+    position: absolute;
+    width: 750px;
+    height: 417px;
+
+    margin-top: -208.5px; /* HALF OF THE HEIGHT */
+    margin-left: -375px; /* HALF OF THE WIDTH */
+}
 :root {
    --purple :#6423B5;
    --blue  :#4049BF;

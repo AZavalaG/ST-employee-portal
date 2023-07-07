@@ -10,6 +10,18 @@ import UpdateProfileHR from "./UpdateProfileHR"
 
 class ProfileUsr extends Component {
     render() {
+        let json = '{'+
+      '"name":"Name Last Name",'+
+      '"email":"test@stgroup.mx",'+
+      '"position":"Servicenow Developer Junior",'+
+      '"projectsAssigned":"test | test",'+
+      '"cell":"Cell 1",'+
+      '"manager":"Jorge",'+      
+      '"linkedInUrl":"https://linkedin.com",'+
+      '"phoneNumber":"1234-1234"'+
+    '}'
+
+    const DataUser = JSON.parse(json);
         return (
             <div>  
                 <div className= {styles.menubar}>

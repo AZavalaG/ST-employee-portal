@@ -1,0 +1,171 @@
+.layout {
+  width: 1166px;
+  height: auto;
+  padding: 34px;
+  background-color: #d1d1d1;
+}
+.titleTimeManagement {
+  color: var(--purple, #6423b5);
+  text-align: center;
+  font-size: 40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.subtitleTimeManagement {
+  color: var(--blue, #4049bf);
+  font-size: 24px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.summaryDashboard {
+  width: 1104px;
+  height: 180px;
+  flex-shrink: 0;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 14%,
+    #979797 14%,
+    #979797 87%,
+    rgba(255, 255, 255, 1) 87%
+  );
+  margin-top: 11px;
+  display: inline-flex;
+}
+.summarySectionMonth {
+  width: 308px;
+  height: 100%;
+  margin: auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.monthLabel {
+  color: #4049bf;
+  font-size: 70px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: block;
+}
+.yearLabel {
+  color: #000;
+  font-size: 35px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: block;
+  margin-left: 25px;
+}
+.hoursLabel {
+  color: var(--gray-1, #393939);
+  font-size: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 25px;
+}
+.summarySectionTimeLeft {
+  width: 386px;
+  height: 100%;
+  margin: auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.summarySectionRegistered {
+  width: 402px;
+  height: 100%;
+  margin: auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listContainer {
+  width: 1124px;
+  height: 589px;
+  flex-direction: row;
+  margin-top: 24px;
+}
+.subtitleList {
+  width: 555px;
+  color: var(--blue, #4049bf);
+  font-size: 24px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: inline-flex;
+}
+.subtitleListMAnager {
+  width: 100%;
+  color: var(--blue, #4049bf);
+  font-size: 24px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: inline-flex;
+}
+.subtitleListRigth {
+  width: 555px;
+  color: var(--blue, #4049bf);
+  font-size: 24px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: inline-flex;
+  margin-left: 12px;
+}
+.columnList {
+  width: 555px;
+  height: 514px;
+  max-height: 514px;
+  overflow-y: auto;
+  flex-shrink: 0;
+  background: #fff;
+  display: inline-flex;
+  flex-direction: column;
+}
+.columnListManager {
+  width: 100%;
+  height: 514px;
+  max-height: 514px;
+  overflow-y: auto;
+  flex-shrink: 0;
+  background: #fff;
+  display: inline-flex;
+  flex-direction: column;
+}
+.columnListRight {
+  width: 555px;
+  height: 514px;
+  max-height: 514px;
+  overflow-y: auto;
+  flex-shrink: 0;
+  background: #fff;
+  margin-left: 6px;
+  display: inline-flex;
+  flex-direction: column;
+}
+.itemList {
+  width: 498px;
+  height: 51px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: var(--gray-3, #d0d0d0);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}

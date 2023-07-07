@@ -1,0 +1,8 @@
+.information{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    margin: 1rem;
+}

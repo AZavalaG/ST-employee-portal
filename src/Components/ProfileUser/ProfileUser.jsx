@@ -1,11 +1,11 @@
 import styles from './profileUser.module.css';
 import React, { Component } from 'react';
 import Navbar from '../Navbar';
-import { SearchBar } from '../SearchBar';
 /*const role = localStorage.getItem("role");*/
 import UserInfo from "./UserInfo";
 import UpdateProfile from "./UpdateProfile"
 import UpdateProfileHR from "./UpdateProfileHR"
+import ColorBlock from '../ActionPanel';
 
 
 class ProfileUsr extends Component {
@@ -28,7 +28,7 @@ class ProfileUsr extends Component {
                 <Navbar/>         
                 </div> 
                 <div className={styles.sidebar}>
-                <SearchBar />
+                <ColorBlock />
                 </div>
                 <div className={styles.profile}>
                     <div className={styles.user_avatar}>

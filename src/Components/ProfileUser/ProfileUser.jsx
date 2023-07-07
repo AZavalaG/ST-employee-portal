@@ -1,11 +1,12 @@
 import styles from './profileUser.module.css';
 import React, { Component } from 'react';
 import Navbar from '../Navbar';
-import UserInfo from "./UserInfo";
-import UpdateProfile from "./UpdateProfile"
-import UpdateProfileHR from "./UpdateProfileHR"
-import ColorBlock from '../ActionPanel';
+import { SearchBar } from '../SearchBar';
 /*const role = localStorage.getItem("role");*/
+import UserInfo from "./UserInfo";
+/*import UpdateProfile from "./UpdateProfile"*/
+/*import UpdateProfileHR from "./UpdateProfileHR"*/
+import ColorBlock from '../ActionPanel';
 
 
 class ProfileUsr extends Component {
@@ -23,12 +24,12 @@ class ProfileUsr extends Component {
 
     const DataUser = JSON.parse(json);
         return (
-            <div className='central'>  
+            <div>  
                 <div className= {styles.menubar}>
                 <Navbar/>         
                 </div> 
                 <div className={styles.sidebar}>
-                <ColorBlock />
+                 <ColorBlock />
                 </div>
                 <div className={styles.profile}>
                     <div className={styles.user_avatar}>
@@ -44,32 +45,6 @@ class ProfileUsr extends Component {
                 </div>
             </div>
         );
-   }
+    }
 }
  export default ProfileUsr;
-
-
-
-
-
- const data = [
-    {
-      employeeId: '01',
-      name: 'John Doe',
-      email: 'johndoe@email.com',
-      position: 'Frontend Developer',
-    },
-    {
-      employeeId: '02',
-      name: 'Sara',
-      email: 'sara@email.com',
-      position: 'HR Executive',
-    },
-    {
-      employeeId: '03',
-      name: 'Mike',
-      email: 'mike@email.com',
-      position: 'Backend Developer',
-    },
-  ]
-  

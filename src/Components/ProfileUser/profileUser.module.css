@@ -23,3 +23,30 @@
   width: 80%;
   margin: 0 2rem 0 18rem;
 }
+
+.user_avatar{
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  color: #6423B5;
+}
+
+.rounded-photo{
+  object-fit: cover;
+  border-radius: 50%;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+}
+.profilePicture{
+  height: 9rem;
+  width: 9rem;
+  margin-top: 1.5rem;
+}
+
+.return:hover{
+  cursor: pointer;
+}

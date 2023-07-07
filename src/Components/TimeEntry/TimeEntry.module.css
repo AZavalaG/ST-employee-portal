@@ -1,0 +1,180 @@
+.layout {
+  width: 1096px;
+  height: 429px;
+  flex-shrink: 0;
+  background: #fff;
+}
+.weekSelector {
+  width: 1055px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #d9d9d9;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.titleWeek {
+  color: var(--gray-1, #393939);
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 32px;
+}
+.calenderInput {
+  width: 143px;
+  height: 33px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid var(--gray-1, #393939);
+  background: #d9d9d9;
+  padding-left: 11px;
+  padding-right: 8px;
+}
+.arrowButtonBack {
+  margin-top: 6px;
+  margin-left: 71px;
+  margin-right: 10px;
+}
+.arrowButtonFoward {
+  margin-top: 6px;
+  margin-left: 10px;
+}
+.arrowButtonBack:hover {
+  cursor: pointer;
+}
+.arrowButtonFoward:hover {
+  cursor: pointer;
+}
+.tableContainer {
+  width: 900px;
+  height: 274px;
+  max-height: 274px;
+  overflow-y: auto;
+  margin: 26px auto;
+}
+.rowContain {
+  display: inline-flex;
+}
+.longHeader {
+  width: 220px;
+  height: 44px;
+  border: 1px solid black;
+  color: var(--blue, #4049bf);
+  font-size: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.longHeaderProyect {
+  width: 220px;
+  height: 44px;
+  border: 1px solid black;
+  color: var(--gray-1, #393939);
+  font-size: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.longHeaderPhase {
+  width: 220px;
+  height: 44px;
+  border: 1px solid black;
+  color: var(--gray-1, #393939);
+  font-size: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.longHeaderTask {
+  width: 220px;
+  height: 44px;
+  border: 1px solid black;
+  color: var(--gray-1, #393939);
+  color: var(--gray-2, #979797);
+  font-size: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.longHeader:hover {
+  cursor: pointer;
+  background-color: #4048bf4a;
+}
+.commentSectionHeader {
+  width: 279px;
+  height: 44px;
+  border: 1px solid black;
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commentSection {
+  width: 279px;
+  height: 44px;
+  border: 1px solid black;
+  color: #000;
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.smallHeader {
+  width: 66px;
+  height: 44px;
+  border: 1px solid black;
+  color: #000;
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.inputComment {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  color: #000;
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}

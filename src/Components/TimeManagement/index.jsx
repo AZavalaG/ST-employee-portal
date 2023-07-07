@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./timeManagement.module.css";
 import ItemCard from "../ItemCard";
+import TimeCardDetails from "../TimeCardDetails";
 
 const TimeManagement = (props) => {
   const { user } = props;
@@ -56,18 +57,94 @@ const TimeManagement = (props) => {
           <div className={styles.subtitleList}>Timecards</div>
           <div className={styles.subtitleListRigth}>Days Off Requests</div>
           <div className={styles.columnList}>
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Rejected"} title={"JUNE 2023"} />
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Approved"} title={"JUNE 2023"} />
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Pendig"} title={"JUNE 2023"} />{" "}
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Rejected"} title={"JUNE 2023"} />
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Approved"} title={"JUNE 2023"} />
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Pendig"} title={"JUNE 2023"} />{" "}
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Rejected"} title={"JUNE 2023"} />
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Approved"} title={"JUNE 2023"} />
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Pendig"} title={"JUNE 2023"} />{" "}
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Rejected"} title={"JUNE 2023"} />
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Approved"} title={"JUNE 2023"} />
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Pendig"} title={"JUNE 2023"} />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Rejected"}
+            />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Approved"}
+            />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Pending"}
+            />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Rejected"}
+            />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Approved"}
+            />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Pending"}
+            />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Approved"}
+            />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Pending"}
+            />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Pending"}
+            />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Approved"}
+            />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Pending"}
+            />
           </div>
           <div className={styles.columnListRight}>
             <ItemCard
@@ -91,18 +168,94 @@ const TimeManagement = (props) => {
         <div className={styles.listContainer}>
           <div className={styles.subtitleList}>Team´s Timecards</div>
           <div className={styles.columnListManager}>
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Rejected"} title={"JUNE 2023"} />
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Approved"} title={"JUNE 2023"} />
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Pendig"} title={"JUNE 2023"} />{" "}
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Rejected"} title={"JUNE 2023"} />
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Approved"} title={"JUNE 2023"} />
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Pendig"} title={"JUNE 2023"} />{" "}
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Rejected"} title={"JUNE 2023"} />
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Approved"} title={"JUNE 2023"} />
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Pendig"} title={"JUNE 2023"} />{" "}
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Rejected"} title={"JUNE 2023"} />
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Approved"} title={"JUNE 2023"} />
-            <ItemCard onClick={()=>{window.alert("click")}} status={"Pendig"} title={"JUNE 2023"} />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Rejected"}
+            />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Approved"}
+            />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Pending"}
+            />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Rejected"}
+            />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Approved"}
+            />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Pending"}
+            />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Approved"}
+            />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Pending"}
+            />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Pending"}
+            />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Approved"}
+            />
+            <TimeCardDetails
+              name="Name"
+              lastName="Last Name"
+              timeCardDate="April 3-7 2023"
+              practice="ServiceNow"
+              title={"APRIL 2023"}
+              status={"Pending"}
+            />
           </div>
         </div>
       )}

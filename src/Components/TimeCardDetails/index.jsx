@@ -2,13 +2,14 @@ import React from "react";
 import { useState } from "react";
 import ModalWindow from "../modal";
 import styles from "./styles.module.css";
+import ItemCard from "../ItemCard";
 
 const TimeCardDetails = (props) => {
   const [show, setShow] = useState(false);
 
   return (
-    <div>
-      <button onClick={() => setShow(true)}>Click Me</button>
+    <>
+      <ItemCard onClick={() => setShow(true)} status={props.status} title={props.title} />
       <ModalWindow
         onClose={() => setShow(false)}
         show={show}
@@ -31,7 +32,7 @@ const TimeCardDetails = (props) => {
           </div>
         </form>
       </ModalWindow>
-    </div>
+    </>
   );
 };
 

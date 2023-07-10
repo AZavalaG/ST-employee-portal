@@ -1,42 +1,25 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import PersonalInfo from '../PersonalInformation';
-import SearchBox from '../SearchBox';
-import Footer from '../Footer';
 
-class ColorBlock extends React.Component {
-    render() {
-      const { color } = this.props;
-  
-      return (
-        <div
-          style={{
-            backgroundColor: color,
-            width: '15rem',
-            height: '97vh',
-          }}
-        >
-            <div><PersonalInfo/></div>
-            <div><SearchBox/></div>
-            <div><Footer/></div>
-        </div>
-        
-      );
-    }
-  }
-  
-  ColorBlock.propTypes = {
-    color: PropTypes.string.isRequired,
-  };
-  
-  class ActionPanel extends React.Component {
-    render() {
-      return (
-        <div>
-          <ColorBlock color="#393939" />
-        </div>
-      );
-    }
-  }
+import AppHeader from './Components/appHeader';
+import ActionInformation from './Components/actionInformation';
+import SearchBox from './Components/searchBox';
+import Footer from './Components/footer';
 
+import styles from './action-panel.module.css';
+
+
+const ActionPanel = ({children}) => {
+  return ( 
+    <div className={styles.actionPanelContainer}>
+      <AppHeader appName="Employee Portal" />
+      <ActionInformation name="Name Last Name" cell="Célula 1" />
+      <SearchBox />
+      <div className={styles.actionPanelContent}>
+        {children}
+      </div>
+      <Footer />
+    </div>
+   );
+}
+ 
 export default ActionPanel;

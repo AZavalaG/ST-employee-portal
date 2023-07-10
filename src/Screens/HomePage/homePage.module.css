@@ -1,0 +1,27 @@
+.homePage {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.homePage > h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    color: #6423B5;
+    margin: 0 auto;
+}
+
+.homePage > span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #4049BF;
+    margin-top: 1rem;
+}
+
+.homePage > img {
+    margin-top: 3rem;
+}

@@ -2,7 +2,7 @@ import React from "react";
 import styles from  '../ScreenTitleBar/screenTitleBar.module.css'
 import iconBack from '../../Assets/back-cta.png';
 
-const ScreenTitleBar = ({ name = "" }) => {
+const ScreenTitleBar = ({ title}) => {
 
   const handleBack = ()=> {
     
@@ -13,7 +13,7 @@ const ScreenTitleBar = ({ name = "" }) => {
       <div>
         <img onClick={handleBack} src={iconBack}></img>
       </div>
-      <div className={styles.title}><p>{name}</p> </div>
+      <div className={styles.title}><p>{title}</p> </div>
     </div>
   );
 };

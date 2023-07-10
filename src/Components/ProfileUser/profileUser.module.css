@@ -1,12 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.central{
+  top: 50%; /* IMPORTANT */
+  left: 50%; /* IMPORTANT */
+  display: block;
+  position: absolute;
+  width: 750px;
+  height: 417px;
+
+  margin-top: -208.5px; /* HALF OF THE HEIGHT */
+  margin-left: -375px; /* HALF OF THE WIDTH */
+}
+
+:root {
+   --purple :#6423B5;
+   --blue  :#4049BF;
+   --gray-1  :#393939;
+   --gray-2  :#979797;
+   --gray-3  :#D0D0D0;
+   --gray-4  :#F6F2F2;
+   --placeholder  :#83859C;
+   --error  :#FF5C60;
+   --link  :#808080;
+   --negro: #0000;
+   --blanco:#fff;
+}
+
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 272px;
-  background-color: #393939;
+  background-color: var(--gray-1);
   padding: 20px;
   box-sizing: border-box;
+  max-width: 50%;
   max-width: 50%;
 }
 
@@ -16,7 +51,328 @@
   left: 272px;
   right: 0;
   padding: 20px;
+  left: 272px;
+  right: 0;
+  padding: 20px;
   box-sizing: border-box;
+}
+
+.profile{
+  width: 80%;
+  margin: 0 2rem 0 18rem;
+}
+
+.user_avatar{
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name{
+  color: var(--purple);
+}
+
+.rounded-photo{
+  object-fit: cover;
+  border-radius: 50%;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+}
+.profilePicture{
+  height: 9rem;
+  width: 9rem;
+  margin-top: 1.5rem;
+}
+
+.return{
+  border: none;
+  background-color: var(--blanco);
+}
+
+.return:hover{
+  cursor: pointer;
+}
+
+
+
+
+.title{
+    color: var(--blue);
+    font-size: 24px;
+    font-family: Roboto;
+    font-weight: 700;
+}
+
+.inputplaceholder{
+    background-color: var(--gray-3);
+    width: 429px;
+    height: 46px;
+    border-radius: 14px;
+    border: none;
+    padding-left: 15px;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title{
+    padding: 22px;
+}
+
+.inputInfo{
+    color: var(--gray-1);
+    font-size: 13px;
+}
+
+.labelInfo{
+    color: var(--gray-2);
+    font-size: 13px;
+    font-weight: 700;
+    padding-right: 20px;
+
+}
+
+.information_data{
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+.information_form {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+
+.labels {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.labels label {
+    text-align: right;
+    padding: 0.5rem;
+}
+
+ input {
+    padding: 0.32rem 1.5rem 0.32rem 0.5rem;
+    margin: 0.17rem;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: var(--gray-1);
+}
+
+.inputs p{
+    padding: 0.32rem;
+    margin: 0.17rem;
+    width: 100%;
+    border-radius: 0.625rem;
+    color: var(--gray-1);
+}
+
+.inputs input:hover {
+    background-color: #fffaf3;
+    margin: 0.12rem;
+    outline: 0.08rem solid #ccc;
+    border: 0.08rem solid #ccc;
+    border-radius: 0.625rem;
+  }
+  
+.inputs input:focus {
+    margin: 0.12rem;
+    outline: 0.08rem solid #ccc;
+    border: 0.08rem solid #ccc;
+    border-radius: 0.625rem;
+}
+
+.information_data button{
+    border-radius: 0.625rem;
+    background: var(--blue, #4049BF);
+    width: 250%;
+    height: 1.875rem;
+    flex-shrink: 0;
+    color: #EBE8E8;
+    text-align: center;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.information_data button:hover {
+    cursor: pointer;
+}
+
+.profile{
+  width: 80%;
+  margin: 0 2rem 0 18rem;
+}
+
+.user_avatar{
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name{
+  color: var(--purple);
+}
+
+.rounded-photo{
+  object-fit: cover;
+  border-radius: 50%;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+}
+.profilePicture{
+  height: 9rem;
+  width: 9rem;
+  margin-top: 1.5rem;
+}
+
+.return{
+  border: none;
+  background-color: var(--blanco);
+}
+
+.return:hover{
+  cursor: pointer;
+}
+
+
+
+
+.title{
+    color: var(--blue);
+    font-size: 24px;
+    font-family: Roboto;
+    font-weight: 700;
+}
+
+.inputplaceholder{
+    background-color: var(--gray-3);
+    width: 429px;
+    height: 46px;
+    border-radius: 14px;
+    border: none;
+    padding-left: 15px;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title{
+    padding: 22px;
+}
+
+.inputInfo{
+    color: var(--gray-1);
+    font-size: 13px;
+}
+
+.labelInfo{
+    color: var(--gray-2);
+    font-size: 13px;
+    font-weight: 700;
+    padding-right: 20px;
+
+}
+
+.information_data{
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+.information_form {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+
+.labels {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.labels label {
+    text-align: right;
+    padding: 0.5rem;
+}
+
+ input {
+    padding: 0.32rem 1.5rem 0.32rem 0.5rem;
+    margin: 0.17rem;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: var(--gray-1);
+}
+
+.inputs p{
+    padding: 0.32rem;
+    margin: 0.17rem;
+    width: 100%;
+    border-radius: 0.625rem;
+    color: var(--gray-1);
+}
+
+.inputs input:hover {
+    background-color: #fffaf3;
+    margin: 0.12rem;
+    outline: 0.08rem solid #ccc;
+    border: 0.08rem solid #ccc;
+    border-radius: 0.625rem;
+  }
+  
+.inputs input:focus {
+    margin: 0.12rem;
+    outline: 0.08rem solid #ccc;
+    border: 0.08rem solid #ccc;
+    border-radius: 0.625rem;
+}
+
+.information_data button{
+    border-radius: 0.625rem;
+    background: var(--blue, #4049BF);
+    width: 250%;
+    height: 1.875rem;
+    flex-shrink: 0;
+    color: #EBE8E8;
+    text-align: center;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.information_data button:hover {
+    cursor: pointer;
 }
 
 .profile{

@@ -28,9 +28,25 @@
 |:----------------:|---------------------------------------------------------------------|:---------:|:---------------------------------------------------------------------------------------------------------------------------------------:|
 | title            | Title for the  Modal Window                                                | title     | Any                                                                                                                                     |
 | Modal Type      | This property allows you to choose between 2 types of Modal Window. | modalType | 1. Confirm: Will generate 2 buttons. Accept and Cancel  2. Informative (Default): Will generate a button to accept or close the window  |
+| onAccept |A function that will be called when the Accept button is clicked, only in the 'confirm' modal type.	 | onAccept|Any function
+| 
+| onCancel|A function that will be called when the Cancel button is clicked, only in the 'confirm' modal type.	 | onCancel| Any function
+| 
+|hideCloseButton |This property allows you to hide the Close button.	 |hideCloseButton	 |true: The Close button will be hidden. false (Default): The Close button will be visible.
+| 
+|acceptButtonValue |The text to be displayed in the Accept button.	|acceptButtonValue	 | Any text. By default it's 'Accept'.
+| 
+| cancelButtonValue| The text to be displayed in the Cancel button.	|cancelButtonValue	 |Any text. By default it's 'Cancel'.
+| 
+
 
 
  Here is an example of how you can use this component.
+
+ Updates
+ Latest updates were made by Ana Maria Tamayo. She added several new props such as onAccept, onCancel, hideCloseButton, acceptButtonValue, and cancelButtonValue to make the modal component more flexible. She also improved the handling of multiple modals, allowing them to be chained or nested.
+
+ 
    ```javascript
       import React, { useState } from 'react';
       import ModalWindow from "./components/modal";

@@ -1,12 +1,12 @@
 import React from "react";
-import TimeEntry from "./Components/TimeEntry";
-
+import TimeManagement from "./Components/TimeManagement"
 const App = () => {
+
   return (
-    <h1>
-      Employee Portal!
-      <TimeEntry />
-    </h1>
+    <div>
+      <h1>Employee Portal!</h1>
+      <TimeManagement/>
+    </div>
   );
 };
 

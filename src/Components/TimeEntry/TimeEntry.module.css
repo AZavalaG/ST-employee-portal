@@ -1,6 +1,8 @@
 .layout {
   width: 1096px;
   height: 429px;
+  max-height: 429px;
+  overflow-y: auto;
   flex-shrink: 0;
   background: #fff;
 }
@@ -52,8 +54,6 @@
 .tableContainer {
   width: 900px;
   height: 274px;
-  max-height: 274px;
-  overflow-y: auto;
   margin: 26px auto;
 }
 .rowContain {

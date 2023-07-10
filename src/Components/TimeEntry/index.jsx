@@ -42,6 +42,7 @@ const TimeEntry = (props) => {
     }
     setRenderData(newData);
   };
+  
 
   return (
     <div className={styles.layout}>

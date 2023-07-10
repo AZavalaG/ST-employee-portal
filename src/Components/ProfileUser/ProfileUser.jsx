@@ -1,7 +1,7 @@
 import styles from './profileUser.module.css';
 import React, { useEffect,useState, Component } from 'react';
 import Navbar from '../Navbar';
-import { SearchBar } from '../SearchBar';
+//import { SearchBar } from '../SearchBar';
 /*const role = localStorage.getItem("role");*/
 import ColorBlock from '../ActionPanel';
 
@@ -21,6 +21,8 @@ const ProfileUsr = () => {
             manager: 'Jorge',
             linkedInUrl: 'https://linkedin.com',
             phoneNumber: '1234-1234',
+            salary : '30000',
+            esqueme: 'Mixto'
             },];
 
         const [employeeData, setEmployeeData] = useState(data)
@@ -100,10 +102,15 @@ const ProfileUsr = () => {
                             <label className={styles.labelInfo}>Manager</label>
                             <label className={styles.labelInfo}>LinkedIn URL</label>
                             <label className={styles.labelInfo}>Phone Number</label>
+                            {hrUpdate ? (
+                            <>
+                            <label className={styles.labelInfo}>Salary</label>
+                            <label className={styles.labelInfo}>Esqueme</label>
+                            </>) : ("")}
                         </div>
                         {hrUpdate?(
                             <div>
-                            {employeeData.map(({name, email, position, projectsAssigned, cell, manager, linkedInUrl, phoneNumber}) => (
+                            {employeeData.map(({name, email, position, projectsAssigned, cell, manager, linkedInUrl, phoneNumber, salary, esqueme}) => (
                                 <div className={`${styles.inputs}`}>
                                 <input className={styles.inputInfo} type="text" name="email" id="email" value={email + ''} onChange={(e) => onChangeInput(e)} />
                                 <input className={styles.inputInfo} type="text" name="position" id="position" value={position + ''} onChange={(e) => onChangeInput(e)} />
@@ -112,6 +119,8 @@ const ProfileUsr = () => {
                                 <input className={styles.inputInfo} type="text" name="manager" id="manager" value={manager + ''} onChange={(e) => onChangeInput(e)} />
                                 <input className={styles.inputInfo} type="text" name="linkedInUrl" id="linkedInUrl" value={linkedInUrl + ''} onChange={(e) => onChangeInput(e)} />
                                 <input className={styles.inputInfo} type="text" name="phoneNumber" id="phoneNumber" value={phoneNumber + ''} onChange={(e) => onChangeInput(e)} />
+                                <input className={styles.inputInfo} type="text" name="salary" id="salary" value={salary + ''} onChange={(e) => onChangeInput(e)} />
+                                <input className={styles.inputInfo} type="text" name="esqueme" id="esqueme" value={esqueme + ''} onChange={(e) => onChangeInput(e)} />
                                 </div>
                             ))}
                             </div>

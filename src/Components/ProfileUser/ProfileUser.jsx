@@ -71,14 +71,8 @@ const ProfileUsr = () => {
         }
 
         return (
-            <div>  
-                <div className= {styles.menubar}>
-                <Navbar/>         
-                </div> 
-                <div className={styles.sidebar}>
-                 <ColorBlock />
-                </div>
-                <div className={styles.profile}>
+            <div className={styles.container}>  
+                <div>
                     <div className={styles.user_avatar}>
                         <figure className={styles.profilePicture}>
                             <img className={`${styles['rounded-photo']}`} src='https://images.pexels.com/photos/1381112/pexels-photo-1381112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' />
@@ -89,7 +83,7 @@ const ProfileUsr = () => {
                     <button className={styles.return} onClick={console.log('test')}>
                         <img src="https://github.com/AZavalaG/ST-employee-portal/blob/EP-E02H01/src/Assets/back-cta.png?raw=true" width="20" height="20"/>
                     </button>
-                    <div className={styles.container}>
+                    <div>
                     <h4 className={`${styles.title}`}>Information</h4>
 
                     <div className={`${styles.information_data}`}>

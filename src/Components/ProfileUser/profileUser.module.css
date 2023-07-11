@@ -116,6 +116,7 @@
 .container{
     width: 100%;
     margin: 0 auto;
+    text-align: left;
 }
 
 .title{
@@ -216,11 +217,6 @@
     cursor: pointer;
 }
 
-.profile{
-  width: 80%;
-  margin: 0 2rem 0 18rem;
-}
-
 .user_avatar{
   display: flex;  
   flex-direction: column;
@@ -246,7 +242,7 @@
 
 .return{
   border: none;
-  background-color: var(--blanco);
+  background-color: transparent;
 }
 
 .return:hover{

@@ -68,8 +68,8 @@
     line-height: normal;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .inputTextArea {
@@ -98,7 +98,7 @@
 .attachWrapper{
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding-top: 32px;
 }
@@ -138,7 +138,6 @@
     padding-bottom: 8px;
     padding-right: 31px;
     margin-left: 23px;
-    -moz-margin-left: 12px;
 }
 
 .fileIcon{
@@ -169,4 +168,14 @@
 
 .textRed {
     color: red;
+}
+
+.fileNameLabel {
+    color: var(--blue, #4049BF);
+    font-size: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 25px;
 }

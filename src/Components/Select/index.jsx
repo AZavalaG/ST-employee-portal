@@ -15,7 +15,7 @@ const SelectList = (props) => {
     return (
         <div className={styles.select}>
             
-            <select name={props.name} className={styles.stSelect} onChange={props?.handleChange}>
+            <select id={props.id} name={props.name} className={styles.stSelect} onChange={props?.handleChange}>
                 {
                     props.options.map((item) => {
                         return (
@@ -33,6 +33,7 @@ SelectList.propTypes = {
    handleChange: PropTypes.func,
    options: PropTypes.array,
    value: PropTypes.string,
+   id: PropTypes.string,
    disabled: PropTypes.bool,
    multiple: PropTypes.bool,
    name: PropTypes.string.isRequired,

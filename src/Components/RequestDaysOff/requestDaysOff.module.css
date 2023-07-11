@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+
+.titleMsg {
+    color: var(--blue, #4049BF);
+    text-align: center;
+    font-size: 13px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.optionsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itemWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--gray-1, #393939);
+    font-size: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.inputDate[type="date"] {
+    width: 114px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--gray-3, #D0D0D0);
+    border: none;
+    color: var(--gray-1, #393939);
+    font-size: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 12px;
+    padding-right: 8px;
+}
+
+.inputLabelPl {
+    padding-left: 20px;
+}
+
+.inputLabelPr {
+    padding-right: 20px;
+}
+
+.stForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.commentWrapper {
+    font-size: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    color: var(--gray-1, #393939);
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.inputTextArea {
+    background: var(--gray-3, #D0D0D0);
+    border-radius: 10px;
+    width: 670px;
+    font-weight: 400;
+    height: 171px;
+    padding-left: 23px;
+    padding-top: 29px;
+    padding-right: 23px;
+    border: none;
+}
+
+.commentLabel {
+    padding-bottom: 3px;   
+}
+
+.submitWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.attachWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 32px;
+}
+
+.buttonWrapper {
+    padding-top: 50px;
+}
+
+.attachmentLabel {
+    color: var(--gray-1, #393939);
+    font-size: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.inputFiles[type="file"] {
+    padding-right: 50px;
+    display: none;
+}
+
+.attachButton {
+    width: 114px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--gray-3, #D0D0D0);
+    color: var(--gray-1, #393939);
+    font-size: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 8px;
+    padding-left: 12.24px;
+    padding-bottom: 8px;
+    padding-right: 31px;
+    margin-left: 23px;
+}
+
+.fileIcon{
+    padding-top: 4px;
+    overflow: hidden;
+    position: absolute;
+    height: 14px;
+    width: 13px;
+    z-index: 5;
+    right: calc(100% - 230px);
+    pointer-events: none;
+}
+
+.attachButton:hover {
+    animation-duration: 0.3s;
+    animation-name: overitem;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes overitem {
+
+    to {
+       box-shadow: 2px 2px 8px #393939;
+       font-weight: bold;
+    }
+}
+
+.textRed {
+    color: red;
+}
+
+.fileNameLabel {
+    color: var(--blue, #4049BF);
+    font-size: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 25px;
+}

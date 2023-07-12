@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styles from "./timeManagement.module.css";
-import ItemCard from "../ItemCard";
 import TimeCardDetails from "../TimeCardDetails";
 
 const TimeManagement = (props) => {

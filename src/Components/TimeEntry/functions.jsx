@@ -47,11 +47,19 @@ export const semanasConDias = (inicio, fin) => {
   }
   return semanas;
 };
-export const formateador = (date)=>{
-    const today = new Date(date);
-    let day = today.getDate();
-    let year = today.getFullYear();
-    let month = today.getMonth();
-    const monthNameLong = day +"/"+month+"/"+year;
-    return monthNameLong;
+export const formateador = (date) => {
+  const today = new Date(date);
+  let day = today.getDate();
+  let year = today.getFullYear();
+  let month = today.getMonth() + 1;
+  const monthNameLong = day + "/" + month + "/" + year;
+  return monthNameLong;
+};
+export const formateadorShort = (tableday, nunDay) => {
+  let date = new Date(JSON.parse(tableday));
+  date.setDate(date.getDate() + nunDay);
+  var month = date.getMonth() + 1;
+  var day = date.getDate();
+  const monthNameLong = day + "/" + month;
+  return monthNameLong;
 };

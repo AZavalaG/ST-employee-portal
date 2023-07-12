@@ -3,7 +3,12 @@ import styles from "./TimeEntry.module.css";
 import BackButton from "../../Assets/backCircule.jpg";
 import FowardButton from "../../Assets/fowardCircule.jpg";
 import { data } from "./dummyData";
-import { formateador, numeroDeSemana, semanasConDias } from "./functions";
+import {
+  formateador,
+  formateadorShort,
+  numeroDeSemana,
+  semanasConDias,
+} from "./functions";
 const TimeEntry = (props) => {
   const { type } = props;
   const [renderData, setRenderData] = useState(data);
@@ -43,6 +48,7 @@ const TimeEntry = (props) => {
             onClick={() => {
               addOrSubtractWeek(-1);
             }}
+            disabled={week === 0}
           >
             <img src={BackButton} alt="" />
           </div>
@@ -53,6 +59,7 @@ const TimeEntry = (props) => {
             onChange={(e) => {
               setWeek(e.target.value);
             }}
+            
           >
             {selectData.length > 0
               ? selectData.map((date) => (
@@ -72,6 +79,7 @@ const TimeEntry = (props) => {
             onClick={() => {
               addOrSubtractWeek(1);
             }}
+            disabled={week === 52}
           >
             <img src={FowardButton} alt="" />
           </div>
@@ -92,27 +100,32 @@ const TimeEntry = (props) => {
               <td className={styles.smallHeader}>
                 Mon
                 <br />
-                {proyect.calender[0]}
+                {selectData.length > 0 &&
+                  formateadorShort(selectData[week - 1]?.inicio, 0)}
               </td>
               <td className={styles.smallHeader}>
                 Tue
                 <br />
-                {proyect.calender[1]}
+                {selectData.length > 0 &&
+                  formateadorShort(selectData[week - 1]?.inicio, 1)}
               </td>
               <td className={styles.smallHeader}>
                 Wed
                 <br />
-                {proyect.calender[2]}
+                {selectData.length > 0 &&
+                  formateadorShort(selectData[week - 1].inicio, 2)}
               </td>
               <td className={styles.smallHeader}>
                 Thu
                 <br />
-                {proyect.calender[3]}
+                {selectData.length > 0 &&
+                  formateadorShort(selectData[week - 1]?.inicio, 3)}
               </td>
               <td className={styles.smallHeader}>
                 Fri
                 <br />
-                {proyect.calender[4]}
+                {selectData.length > 0 &&
+                  formateadorShort(selectData[week - 1].inicio, 4)}
               </td>
               <td className={styles.commentSectionHeader}>{"Comment"}</td>
             </tr>

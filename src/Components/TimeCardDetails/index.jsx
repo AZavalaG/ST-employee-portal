@@ -49,7 +49,7 @@ const TimeCardDetails = (props) => {
             <h2 className={styles.content}>{props.practice}</h2>
             <h2 className={styles.content}>{props.timeCardDate}</h2>
           </div>
-          <TimeEntry type={type === "Dev" ? "request" : "view"} />
+          <TimeEntry type={"view"} />
         </form>
       </ModalWindow>
       {type === "Dev" ? null : (

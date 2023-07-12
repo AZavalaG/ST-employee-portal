@@ -48,7 +48,12 @@ const ModalWindow = (props) => {
             </>
           ) : (
             !props.hideCloseButton && (
-              <input type="button" value="Close" onClick={props.onClose} />
+              <input
+                type="button"
+                value="Close"
+                onClick={props.onClose}
+                className={styles.modalRejected}
+              />
             )
           )}
         </div>

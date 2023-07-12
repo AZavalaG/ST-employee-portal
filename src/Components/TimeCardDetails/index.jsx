@@ -6,6 +6,7 @@ import ItemCard from "../ItemCard";
 import TimeEntry from "../TimeEntry";
 
 const TimeCardDetails = (props) => {
+  const { type } = props;
   const [show, setShow] = useState(false);
   const [showApprovalModal, setShowApprovalModal] = useState(false);
   const [showRejectionModal, setShowRejectionModal] = useState(false);
@@ -16,6 +17,7 @@ const TimeCardDetails = (props) => {
         onClick={() => setShow(true)}
         status={props.status}
         title={props.title}
+        subtitle={props.subtitle}
       />
       <ModalWindow
         onClose={() => setShow(false)}
@@ -29,7 +31,7 @@ const TimeCardDetails = (props) => {
         }}
         show={show}
         title="Time Card Details"
-        modalType="confirm"
+        modalType={type==="Dev"?"informative":"confirm"}
         acceptButtonValue="Approve"
         cancelButtonValue="Reject"
       >
@@ -47,23 +49,32 @@ const TimeCardDetails = (props) => {
             <h2 className={styles.content}>{props.practice}</h2>
             <h2 className={styles.content}>{props.timeCardDate}</h2>
           </div>
-          <TimeEntry type="view" />
+          <TimeEntry type={type === "Dev" ? "request" : "view"} />
         </form>
       </ModalWindow>
-      <ModalWindow
-        onClose={() => setShowApprovalModal(false)}
-        show={showApprovalModal}
-        title="TimeCard Approved!"
-        hideCloseButton={true}
-      ></ModalWindow>
-      <ModalWindow
-        onClose={() => setShowRejectionModal(false)}
-        show={showRejectionModal}
-        title="TimeCard Rejected!"
-        hideCloseButton={true}
-      ></ModalWindow>
+      {type === "Dev" ? null : (
+        <>
+          <ModalWindow
+            onClose={() => setShowApprovalModal(false)}
+            show={showApprovalModal}
+            title="TimeCard Approved!"
+            hideCloseButton={true}
+          ></ModalWindow>
+          <ModalWindow
+            onClose={() => setShowRejectionModal(false)}
+            show={showRejectionModal}
+            title="TimeCard Rejected!"
+            hideCloseButton={true}
+            
+          ></ModalWindow>
+        </>
+      )}
     </>
   );
 };
 
 export default TimeCardDetails;
+
+TimeCardDetails.defaultProps = {
+  type: "Dev",
+};

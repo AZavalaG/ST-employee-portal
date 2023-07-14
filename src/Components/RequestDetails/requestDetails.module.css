@@ -16,6 +16,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    padding-top: 11px;
 }
 
 .labelWrapper {
@@ -42,6 +43,7 @@
     font-weight: 400;
     line-height: normal;
     padding-left: 19px;
+    padding-top: 11px;
 }
 
 .linkWrapper{

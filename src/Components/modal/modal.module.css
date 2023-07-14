@@ -66,11 +66,11 @@
 }
 
 .modalContent {
-  text-align: center;
+  /* text-align: center; */
+  /*This style wont be here because we need to display on the center everything in the different components not in the modal, to do so, we can create a div and center from there*/
   padding-bottom: 5px;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
 }
+
 .modalRejected {
   width: 135px;
   height: 30px;
@@ -81,10 +81,12 @@
   border: 1px solid transparent;
   margin: 10px;
 }
+
 .modalRejected:hover {
   cursor: pointer;
   background: var(--error, #f62225);
 }
+
 .modalApproved {
   width: 135px;
   height: 30px;
@@ -95,6 +97,7 @@
   color: #fff;
   margin: 10px;
 }
+
 .modalApproved:hover {
   cursor: pointer;
   background: var(--error, #141fb9);

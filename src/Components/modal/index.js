@@ -30,28 +30,6 @@ const ModalWindow = (props) => {
         <div className={true && props.children ? styles.modalContent : ""}>
           {props.children}
         </div>
-        <div className={styles.modalFooter}>
-          {props.modalType === "confirm" ? (
-            <>
-              <input
-                type="button"
-                value={props.acceptButtonValue}
-                onClick={props.onAccept}
-                className={styles.modalApproved}
-              />
-              <input
-                type="button"
-                value={props.cancelButtonValue}
-                onClick={props.onCancel}
-                className={styles.modalRejected}
-              />
-            </>
-          ) : (
-            !props.hideCloseButton && (
-              <input type="button" value="Close" onClick={props.onClose} />
-            )
-          )}
-        </div>
       </div>
     </div>
   );

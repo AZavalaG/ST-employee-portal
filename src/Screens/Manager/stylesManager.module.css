@@ -1,0 +1,155 @@
+body{
+    background-color: #f6f2f2;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    color: #6423b5;
+    font-size: 40px;
+    line-height: 40px;
+}
+  
+h2 {
+  color: #4049BF;
+  font-size: 24px;
+  line-height: 24px;
+  float: left;
+  margin-left: 3%;
+}
+  
+h3 {
+  color: #979797;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.iconBackClass{
+    position: relative;
+    top: 55px;
+    left: 5%;
+    margin-top:2%;
+    border: 0px;
+}
+
+.container{
+    width: 90%;
+    height: 350px;
+    background-color: #fff;
+    overflow: scroll;
+    margin: auto;
+    padding: 2%;
+}
+
+.topContainer{
+  width: 98%;
+  color: #393939;
+  font-weight: 700;
+  font-size: 1.5em;
+  margin: 1% auto;
+}
+
+.topContainer div{
+  width: 43%;
+  padding:2%;
+  margin:1%;
+  float: left;
+}
+
+.topContainer div span{
+  margin:0px;
+}
+
+.bodyContainer{
+  width: 99%;
+  color: #393939;
+  font-size: 1.5em;
+  margin: 2%;
+  float:left;
+  text-align: left;
+}
+
+.bodyContainer .sectionTitle, .footerContainer .sectionTitle{
+  width: 99%;
+  float: left;
+}
+
+.bodyContainer .sectionContent{
+  width: 96%;
+  border: 2px #6423b5 solid;
+  border-radius: 0.3em;
+  padding: 1%;
+  float:left;
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bodyContainer .sectionContent h2{
+  font-size: 1em;
+  margin: 5px;
+}
+
+.skillsContainer{
+  display:flex;
+  flex-wrap: wrap;
+  background-color: #979797;
+  border: 1px #393939 solid;
+}
+
+.skillColumn{
+  border:1px #ff5c60 solid;
+  margin:3px auto;
+  width: 48%;
+  justify-content: center;
+  display: flex;
+}
+
+.footerContainer{
+  width: 99%;
+  color: #393939;
+  font-size: 1.5em;
+  margin: 1%;
+  float:left;
+  text-align: left;
+}
+
+.footerContainer .sectionContent{
+  width: 96%;
+  border: 2px #6423b5 solid;
+  border-radius: 0.3em;
+  padding: 2%;
+  float:left;
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.approved{
+    color: #4049bf;
+    text-transform: capitalize;
+}
+
+.rejected{
+    color: #ff5c60;
+    text-transform: capitalize;
+}
+
+.pending{
+    color: #979797;
+    text-transform: capitalize;
+}
+
+.rightText{
+  text-align: right;
+}
+.leftText{
+  text-align: left;
+}

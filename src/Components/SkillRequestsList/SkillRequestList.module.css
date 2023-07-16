@@ -1,0 +1,8 @@
+.container{
+    width: 90%;
+    height: 300px;
+    background-color: #fff;
+    overflow: scroll;
+    margin: auto;
+    padding: 2%;
+}

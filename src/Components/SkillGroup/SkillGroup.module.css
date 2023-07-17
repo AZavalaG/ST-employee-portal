@@ -1,0 +1,47 @@
+.sectionContent{
+  width: 98%;
+  padding: 1%;
+  float:left;
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.skillGroupContainer{
+    width: 98%;
+    border: 2px #d7b5ff solid;
+    border-radius: 0.3em;
+    padding: 1%;
+    margin-top:5px;
+    display: flex;
+    text-align: center;
+    flex-direction:column;
+    flex-wrap: wrap;
+    
+}
+
+.skillGroupContainer .sectionContent h2{
+  font-size: 1.5em;
+  margin: 5px auto;
+  text-align: center;
+}
+
+.skillGroupContainer .sectionTitle{
+  width: 99%;
+  text-align: center;
+}
+
+.skillsContainer{
+  margin: auto;
+}
+
+.skillColumn{
+  margin:5px 1% 1% 0px;
+  width: 48%;
+  flex-basis: 48%;
+  float:left;
+  text-align: center;
+  padding: 5px;
+}

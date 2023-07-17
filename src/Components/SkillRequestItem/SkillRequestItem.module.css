@@ -1,0 +1,43 @@
+.SkillRequestItem{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    border: 3px solid #4049bf;
+    background-color: #f6f2f2;
+    margin: 2% auto;
+    padding: 3%;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.SkillRequestItem div{
+    margin: 0.5%;
+    color: #393939;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    text-shadow: 1px 1px 1px #767676;
+}
+
+.approved{
+    color: #4049bf;
+    text-transform: capitalize;
+}
+
+.rejected{
+    color: #ff5c60;
+    text-transform: capitalize;
+}
+
+.pending{
+    color: #979797;
+    text-transform: capitalize;
+}

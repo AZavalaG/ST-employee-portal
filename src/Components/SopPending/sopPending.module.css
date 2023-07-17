@@ -1,0 +1,38 @@
+
+
+.headerTitle {
+    color: var(--blue, #4049BF);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.leftItem {
+    text-align: left;
+}
+
+.rightItem{
+    text-align: right;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 52px;
+}
+
+.itemsContainer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 74px;
+    padding-right: 74px;
+}
+
+.itemWrapper {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}

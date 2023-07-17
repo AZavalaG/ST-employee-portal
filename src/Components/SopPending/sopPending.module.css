@@ -10,6 +10,14 @@
     line-height: normal;
 }
 
+.leftItem {
+    text-align: left;
+}
+
+.rightItem{
+    text-align: right;
+}
+
 .contentContainer {
     display: flex;
     flex-direction: row;

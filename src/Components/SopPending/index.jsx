@@ -43,7 +43,7 @@ const SopPending = ({idUsr}) => {
     return (
         <div className={styles.contentContainer}>
             <div className={styles.itemsContainer}>
-                <p className={styles.headerTitle}>Completed</p>
+                <p className={`${styles.headerTitle} ${styles.leftItem}`}>Completed</p>
                 {
                     completedList.map((item) => {
                         return <div  key={item.id} className={styles.itemWrapper}>
@@ -53,7 +53,7 @@ const SopPending = ({idUsr}) => {
                 }
             </div>
             <div className={styles.itemsContainer}>
-                <p className={styles.headerTitle}>Uncompleted</p>
+                <p className={`${styles.headerTitle} ${styles.rightItem}`}>Uncompleted</p>
                 {
                     uncompletedList.map((item) => {
                         return <div key={item.id} className={styles.itemWrapper}>

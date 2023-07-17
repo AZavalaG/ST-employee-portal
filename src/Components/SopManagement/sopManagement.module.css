@@ -1,0 +1,8 @@
+.gridSopItems{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 21px 18px;
+    padding-top: 28px;
+    padding-left: 57px;
+    padding-right: 57px;
+}

@@ -1,8 +1,15 @@
 import React from 'react';
 import styles from './login.module.css';
 import stLogoBco from '../../Assets/S&T_Logo_Blanco.png';
+import { createClient } from '@supabase/supabase-js';
 
 const LoginPage = () => {
+    const getSSOAuthUrl = async (event) => {
+        const sp = createClient(process.env.REACT_APP_VITE_SUPABASE_URL, process.env.REACT_APP_VITE_SUPABASE_ANON_KEY);
+        const resp = await sp.auth.signInWithOAuth({
+            provider: 'google'
+        })
+    }
     return ( 
         <div className={styles.loginPage}>
             <div className={styles.loginPageImg}>
@@ -12,12 +19,8 @@ const LoginPage = () => {
             <main className={styles.loginPageMain}>
                 <h2>Hello Again!</h2>
                 <span>Please log in to continue</span>
-                <form className={styles.loginPageForm}>
-                    <input  type='email' name='email' placeholder='Email' />
-                    <input type='password' name='password' placeholder='Password' />
-                    <button>Log In</button>
-                </form>
                 <a className={styles.loginPageHelp}>Need help?</a>
+                <button onClick={getSSOAuthUrl}>Google</button>
             </main>
         </div>
         

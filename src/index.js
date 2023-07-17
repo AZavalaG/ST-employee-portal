@@ -5,13 +5,12 @@ import OtherComponent from './Components/ProfileUser/ProfileUser';
 import reportWebVitals from './reportWebVitals';
 import Layout from './Layout';
 import './Styles/app.css';
+import LoginPage from './Screens/LoginPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Layout>
-       <OtherComponent />
-    </Layout>
+    <LoginPage />
   </React.StrictMode>
 );
 

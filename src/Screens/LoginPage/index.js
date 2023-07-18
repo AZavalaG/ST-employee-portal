@@ -6,7 +6,7 @@ import { createClient } from '@supabase/supabase-js';
 const LoginPage = () => {
     const getSSOAuthUrl = async (event) => {
         const sp = createClient(process.env.REACT_APP_VITE_SUPABASE_URL, process.env.REACT_APP_VITE_SUPABASE_ANON_KEY);
-        const resp = await sp.auth.signInWithOAuth({
+        await sp.auth.signInWithOAuth({
             provider: 'google'
         })
     }

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from "./sopPage.module.css";
 import ItemCard from "../ItemCardSOP";
 import ModalWindow from "../modal";
-import Arrow from "./Vector.svg";
+import ImageButton from "./SvgButton";
 
 const SopPage = () => {
     const [currentYear, setCurrentYear] = useState(2023);
@@ -16,9 +16,12 @@ const SopPage = () => {
         setCurrentMonth(monthNameLong);
     }, []);
 
+    const handleClick = () => {
+        // Arrow button logic
+    };
     return (
         <div className={styles.layout}>
-            <img src={Arrow} alt="arrow" className={styles.arrowSVG} />
+            <ImageButton onClick={handleClick} />
             <div><h1 className={styles.title}>SOP Management</h1></div>
             <div className={styles.sections}>
                 <div className={styles.overallSection}>

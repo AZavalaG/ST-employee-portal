@@ -1,0 +1,64 @@
+.layout {
+  width: 498px;
+  height: 51px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: var(--gray-3, #d0d0d0);
+  margin: 15px auto;
+  display: inline-flex;
+  align-items: center;
+}
+.layout:hover {
+  cursor: pointer;
+  background: var(--gray-3, #ababab);
+}
+.titleItemCard {
+  color: var(--gray-1, #393939);
+  font-size: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 28px;
+  width: 67%;
+}
+.titleWithSubtitleItemCard {
+  color: var(--gray-1, #393939);
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 33%;
+  margin-left: 26px;
+}
+.pendig .approved .rejected{
+    width: 33%;
+}
+.pendig {
+  color: var(--gray-2, #979797);
+  text-align: right;
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.approved {
+  color: var(--blue, #4049bf);
+  text-align: right;
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.rejected {
+  color: var(--error, #ff5c60);
+  text-align: right;
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

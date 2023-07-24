@@ -1,0 +1,63 @@
+/*@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat.zip') format('truetype');
+     Añade aquí otras variantes de la fuente si las tienes 
+  }*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+  
+button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 5px;
+    border-radius: 2em;
+    border-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  button:hover {
+    background-color: #f2f2f2;
+    color: #333333;
+  }
+
+.buttonError {
+    background-color: #FF5C60;
+    /* Otros estilos específicos para el tipo 'error' */
+  }
+  
+  .buttonAlert{
+    background-color: #FF5C60;
+    /* Otros estilos específicos para el tipo 'alert' */
+  }
+  
+  .buttonInfo {
+    background-color: #4049BF;
+    /* Otros estilos específicos para el tipo 'info' */
+  }
+  
+  .buttonSuccess{
+    background-color: #4049BF;
+    /* Otros estilos específicos para el tipo 'success' */
+  }
+  
+  /* Estilos comunes para todos los tipos de botón */
+  .buttonDefault{
+    background-color: #979797;
+    /* Otros estilos comunes */
+  }
+
+  .buttonInactive{
+    background-color: #D0D0D0;
+    /* Otros estilos comunes */
+  }

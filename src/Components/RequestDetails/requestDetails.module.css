@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+
+.requestContainer{
+    display: flex;
+    flex-direction: row;
+    /*align-items: center;
+    justify-content: center; */
+}
+
+.fieldName {
+    color: var(--gray-2, #979797);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.labelWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 200px;
+}
+
+.valueWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-right: 200px;
+}
+
+.fieldValue{
+    color: var(--gray-1, #393939);
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 19px;
+}
+
+.linkWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.downloadIcon {
+    overflow: hidden;
+    position: relative;
+    height: 14px;
+    width: 13px;
+    z-index: 5;
+    pointer-events: none;
+    padding-left: 6px;
+}

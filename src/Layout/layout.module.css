@@ -1,0 +1,25 @@
+.layoutContainer {
+    display: grid;
+    grid-template: 70px 1fr / 20% 80%;
+    box-sizing: border-box;
+    grid-template-areas: "actionPanel navBar" "actionPanel mainContainer";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-height: 100vh;
+    width: 100%;
+    background: #EAEAEA;
+}
+
+.mainContainer {
+    grid-area: mainContainer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    box-sizing: border-box;
+}

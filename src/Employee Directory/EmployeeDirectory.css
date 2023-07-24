@@ -1,0 +1,78 @@
+/* Importa la fuente Montserrat con diferentes pesos */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+
+/* Estilos para el contenedor principal del directorio de empleados */
+.employee-directory-container {
+  background-color: #f5f5f5; /* Color de fondo */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  font-family: 'Montserrat', sans-serif; /* Fuente de texto */
+  text-align: center; /* Alineación de texto */
+}
+
+/* Estilos para el encabezado h1 dentro del contenedor */
+.employee-directory-container h1 {
+  color: #4049BF; /* Color del texto */
+}
+
+/* Estilos para la lista de empleados */
+.employee-list {
+  display: flex; /* Muestra los elementos en línea */
+  flex-wrap: wrap; /* Envuelve los elementos cuando no caben en una línea */
+  justify-content: space-around; /* Distribución espaciada de los elementos */
+  background-color: #ffffff; /* Color de fondo */
+  padding: 50px; /* Espaciado interno */
+}
+
+/* Estilos para cada elemento de empleado en la lista */
+.employee-item {
+  border: 3px solid; /* Borde sólido */
+  border-color: #4049BF; /* Color del borde */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 20px; /* Espacio inferior */
+  margin-left: 10px; /* Espacio izquierdo */
+  margin-right: 10px; /* Espacio derecho */
+  padding: 40px; /* Espaciado interno */
+  display: flex; /* Muestra los elementos en línea */
+  align-items: center; /* Alineación vertical de los elementos */
+  justify-content: center; /* Alineación horizontal de los elementos */
+  width: 10.5em; /* Ancho fijo */
+  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Transición animada */
+}
+
+/* Estilos para los enlaces dentro de los elementos de empleado */
+.employee-item a {
+  text-decoration: none; /* Sin decoración de texto */
+  color: inherit; /* Hereda el color del texto circundante */
+}
+
+/* Estilos adicionales para los elementos de empleado */
+.employee-item {
+  color: #393939; /* Color del texto */
+}
+
+/* Estilos para el contenido adicional dentro de los elementos */
+.contentItem {
+  color: #979797; /* Color del texto */
+}
+
+/* Estilos al pasar el cursor sobre un elemento de empleado */
+.employee-item:hover {
+  transform: scale(1.05); /* Aumenta el tamaño */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra en los bordes */
+}
+
+/* Estilos para el contenedor de información del empleado */
+.employee-info {
+  text-align: center; /* Alineación de texto */
+}
+
+/* Estilos para el nombre del empleado */
+.employee-name {
+  display: -webkit-box; /* Muestra el texto en varias líneas */
+  -webkit-line-clamp: 2; /* Límite de líneas */
+  -webkit-box-orient: vertical; /* Orientación vertical */
+  word-wrap: break-word; /* Salto de línea */
+  width: 99%; /* Ancho del contenedor */
+  color: #4049BF; /* Color del texto */
+}

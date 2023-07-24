@@ -1,0 +1,111 @@
+.loginPage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginPageImg {
+    width: 50%;
+    background: url('../../Assets/loginbg.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0 3rem;
+}
+
+.loginPageImg > h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+}
+
+.loginPageImg > img {
+    width: 10rem;
+}
+
+.loginPageMain {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.loginPageMain > h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    color: #6423B5;
+    margin: 0 auto;
+}
+
+.loginPageMain > span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #393939;
+    font-weight: bold;
+}
+
+.loginPageForm {
+    width: 90%;
+    margin: 4rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginPageForm > input {
+    width: 100%;
+    padding: 12px 30px;
+    box-sizing: border-box;
+    border: none;
+    color: #393939;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background: #D0D0D0;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    outline: none;
+}
+.loginPageForm > input::placeholder {
+    color: #393939;
+}
+
+.loginPageForm > button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: #4049BF;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.loginPageForm > button:hover,
+.loginPageForm > button:active {
+    opacity: 0.7;
+}
+
+.loginPageHelp {
+    font-family: 'Montserrat', sans-serif;
+    color: #838383;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.loginPageHelp:hover,
+.loginPageHelp:active {
+    color: #393939;
+}

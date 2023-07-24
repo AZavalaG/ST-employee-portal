@@ -80,21 +80,33 @@
     color: #393939;
 }
 
-.loginPageForm > button {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    background: #4049BF;
-    padding: 10px 50px;
+.loginBtn {
+    width: 200px;
+    padding: 8px 15px;
+    box-sizing: border-box;
+    border-radius: 15px;
     border: none;
-    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #393939;
+    background: #eaeaea;
     margin-top: 1rem;
+    cursor: pointer;
 }
 
-.loginPageForm > button:hover,
-.loginPageForm > button:active {
-    opacity: 0.7;
+.loginBtn > img {
+    height: 35px;
+    margin-right: 5px;
+}
+
+.loginBtn:hover,
+.loginBtn:active {
+    background: #4049BF;
+    color: white;
 }
 
 .loginPageHelp {

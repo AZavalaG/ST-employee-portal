@@ -1,84 +1,46 @@
-.layout {
-  width: 386px;
-  height: 711px;
-  flex-shrink: 0;
-  border-radius: 23px;
-  border: 3px solid var(--purple, #6423b5);
-  background: #f6f2f2;
-  padding: 16px;
-  flex-direction: column;
-  display: flex;
-}
-.profileImageSpace {
-  width: 118px;
-  height: 171px;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.profileImageContent {
-  width: 118px;
-  height: 118px;
-  border-radius: 188px;
-  border: 3px solid #000;
-  background: #d9d9d9;
-  background: url(../../Assets/background_person.png),
-    lightgray 50% / cover no-repeat;
-}
-
-.labelName {
-  color: #6423b5;
-  text-align: center;
-  font-size: 24px;
-  font-family: Roboto;
-  font-weight: 700;
-}
-.labelVariable{
-  margin-top: 12px;
-  color: #979797;
-  text-align: center;
-  font-size: 12px;
-  font-family: Roboto;
-  font-weight: 700;
-}
-.labelValue {
-  color: #4049bf;
-  text-align: center;
-  font-size: 16px;
-  font-family: Roboto;
-  font-weight: 700;
-}
-.containerFlag {
-  width: 101px;
-  height: 58px;
-  flex-shrink: 0;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 12px;
-
-}
-.personCardEditButton {
-  width: 229px;
-  height: 49px;
-  flex-shrink: 0;
+.personCard {
+  border: 3px solid #4049BF;
   border-radius: 10px;
-  border: 1px solid var(--purple, #6423b5);
-  background: var(--purple, #6423b5);
-  margin-top: 90px;
-  margin-right: auto;
-  margin-left: auto;
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-  font-family: Roboto;
-  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  width: 100%;
+  height: 250px;
 }
-.personCardEditButton:hover{
-  cursor: pointer;
-  background-color: #4049BF;
-  border-color: #4049BF;
+
+.personCard > h3  {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4049BF;
+  width: 80%;
+}
+
+.cardItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardItem > span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #393939;
+  margin: 0 auto;
+}
+
+.cardItem > label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 0.5rem;
+  color: #979797;
+  margin: 0 auto;
+}
+
+.cardItem > img {
+  width: 2rem;
 }

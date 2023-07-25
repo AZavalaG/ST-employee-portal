@@ -1,24 +1,31 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import styles from './navbar.module.css';
 
 const Navbar = () => {
     return (
-        <nav className={styles.navbar}>
-            <ul className={`${styles['nav-content']} ${styles['ul-no_style']}`}>
-                <li className={`${styles['nav-item']} ${styles['space-between_item']} ${styles['link-item']}`}>Home</li>
-                <li className={`${styles['nav-item']} ${styles['space-between_item']} ${styles['link-item']}`}>SOP</li>
-                <li className={`${styles['nav-item']} ${styles['space-between_item']} ${styles['link-item']}`}>People</li>
-                <li className={`${styles['nav-item']} ${styles['space-between_item']} ${styles['link-item']}`}>Time Management</li>
-                <li className={`${styles['nav-item']} ${styles['space-between_item']} ${styles['link-item']}`}>Projects</li>
+        <nav className={styles.navBar}>
+            <ul className={styles.navList}>
+                <li className={styles.navItem}>
+                    <Link to="/">Home</Link>
+                </li>
+                <li className={styles.navItem}>
+                    <Link to="/sop">SOP</Link>
+                </li>
+                <li className={styles.navItem}>
+                    <Link to="/people">People</Link>
+                </li>
+                <li className={styles.navItem}>
+                    <Link to="/time">Time Management</Link>
+                </li>
+                <li className={styles.navItem}>
+                    <Link to="/projects">Projects</Link>
+                </li>
             </ul>
 
-            <ul className={`${styles['nav-content']} ${styles['ul-no_style']}`}>
-                <li className={`${styles['nav-item']} ${styles.destructive}`}>Logout</li>
-                <li>
-                    <figure className={styles.profilePicture}>
-                        <img className={`${styles['rounded-photo']}`} src='https://images.pexels.com/photos/1381112/pexels-photo-1381112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt="Profile"/>
-                    </figure> 
-                </li>
+            <ul className={styles.profileSection}>
+                <li className={styles.logOutItem}>Logout</li>
             </ul>
         </nav>
     );

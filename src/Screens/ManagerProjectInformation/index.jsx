@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
+import ItemCard from "../../Components/ItemCard";
 import styles from "./managerProjectInformation.module.css";
-import ItemCard from "../ItemCard";
 
-const managerProjectInformation = (props) => {
+const ManagerProjectInformation = (props) => {
   const { user } = props;
   const [hoursLeft, sethoursLeft] = useState(0);
   const [hoursElapsed, setHoursElapsed] = useState(0);
@@ -112,8 +112,8 @@ const managerProjectInformation = (props) => {
   );
 };
 
-export default managerProjectInformation;
+export default ManagerProjectInformation;
 
-managerProjectInformation.defaultProps = {
+ManagerProjectInformation.defaultProps = {
   user: "Manager",
 };

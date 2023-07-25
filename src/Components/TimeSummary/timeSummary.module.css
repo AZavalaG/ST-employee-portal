@@ -1,0 +1,52 @@
+.timeSummary {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin: 2rem 0;
+}
+
+.timeSummary >  h3 {
+    color: #4049BF;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.timeSummaryContainer {
+    background: white;
+    display: grid;
+    grid-template: auto / repeat(3, 1fr);
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+.monthContainer {
+    width: 100%;
+}
+
+.monthContainer > h4 {
+    color: #4049BF;
+    font-size: 3rem;
+}
+
+.monthContainer > span{
+    color: #393939;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hoursContainer {
+    width: 100%;
+    border-left: 1.8px solid #979797;
+}
+
+.hoursContainer > h4 {
+    color: #6423B5;
+    font-size: 3rem;
+}
+
+.hoursContainer > span{
+    color: #393939;
+    font-size: 1rem;
+    font-weight: bold;
+}

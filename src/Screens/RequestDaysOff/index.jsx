@@ -1,11 +1,11 @@
 import {useState, useRef } from "react";
 import PropTypes from 'prop-types';
-import SelectList from "../Select";
-import Button from "../Button";
+import SelectList from "../../Components/Select";
+import Button from "../../Components/Button";
 import styles from "./requestDaysOff.module.css";
 import FileIcon from "../../Assets/file.png";
 import {supabase} from '../../supabaseClient';
-import ModalWindow from "../modal";
+import ModalWindow from "../../Components/Modal";
 
 
 const RequestDaysOff = (props) => {

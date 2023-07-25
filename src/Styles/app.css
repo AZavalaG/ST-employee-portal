@@ -14,3 +14,70 @@ body {
   height: 100%;
   width: 100%;
 }
+
+.layoutContainer {
+    display: grid;
+    grid-template: 70px 1fr / 300px 1fr;
+    box-sizing: border-box;
+    grid-template-areas: "actionPanel navBar" "actionPanel mainContainer";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-height: 100vh;
+    width: 100%;
+    background: #EAEAEA;
+}
+
+.mainContainer {
+    grid-area: mainContainer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.app-item {
+  margin: 2px 0;
+  padding: 7px 0;
+  text-align: center;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.app-item:hover,
+.app-item:active {
+  background: #979797;
+  color: #6423B5;
+}
+
+.app-title {
+  color: #6423B5;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+}
+
+.app-button {
+  background: #4049BF;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-style: 1rem;
+  padding: 8px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.app-button:hover,
+.app-button:active {
+  background: #979797;
+}

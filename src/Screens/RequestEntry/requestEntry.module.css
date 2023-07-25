@@ -1,0 +1,153 @@
+.requestEntryPage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    box-sizing: border-box;
+}
+
+.requestEntryPageMain {
+    width: 100%;
+}
+
+.requestEntryPageMain > p {
+    color: #4049BF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    margin: 3rem 0 1rem 0;
+}
+
+.requestFormContainer {
+    background: white;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.requestForm {
+    width: 100%;
+}
+
+label {
+    color: #393939;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+}
+
+.topInputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.topInput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+}
+
+.topInput > input {
+    font-size: 0.6rem;
+    border: 2px solid #393939;
+    border-radius: 5px;
+    margin-left: 8px;
+    padding: 5px 2px 5px 5px;
+    width: 100px;
+    outline: none;
+    cursor: pointer;
+}
+
+.topSelect {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+}
+
+.topSelect > select {
+    font-size: 0.6rem;
+    border: 2px solid #393939;
+    border-radius: 5px;
+    margin-left: 8px;
+    padding: 5px 2px 5px 5px;
+    width: 90px;
+    outline: none;
+    cursor: pointer;
+}
+
+.textArea {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: 1.5rem 0;
+    width: 100%;
+}
+
+.textArea > label {
+    width: 100%;
+    text-align: justify;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.textArea > textarea {
+    border-radius: 10px;
+    border: none;
+    background: #D0D0D0;
+    color: #393939;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 7rem;
+    margin: 0 auto;
+    outline: none;
+}
+
+.fileAttach {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+
+.fileAttach > input {
+    font-size: 0.6rem;
+    margin-left: 8px;
+    cursor: pointer;
+    width: 200px;
+    outline: none;
+}
+
+.submitBtn {
+    background: #4049BF;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-style: 1rem;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: auto;
+    margin-top: 3rem;
+}
+
+.submitBtn:hover,
+.submitBtn:active {
+  background: #979797;
+}

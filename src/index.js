@@ -1,16 +1,63 @@
 import React from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
-/*import App from './App';*/
-import OtherComponent from './Components/ProfileUser/ProfileUser';
 import reportWebVitals from './reportWebVitals';
-import Layout from './Layout';
-import './Styles/app.css';
+
+// Static Screens
+import App from './App';
 import LoginPage from './Screens/LoginPage';
+import HomePage from './Screens/HomePage';
+import PeoplePage from './Screens/PeoplePage';
+import TimeManagement from './Screens/TimeManagement';
+import TimeEntry from './Screens/TimeEntry';
+import RequestEntry from './Screens/RequestEntry';
+// Dinamic Screens
+import ProfilePage from './Screens/ProfilePage';
+
+import './Styles/app.css';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <div>Error Screen!</div>,
+    children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "/people",
+        element: <PeoplePage />,
+      },
+      {
+        path: "/time",
+        element: <TimeManagement />,
+      },
+      {
+        path: "/time/new-timecard",
+        element: <TimeEntry />,
+      },
+      {
+        path: "/time/new-request",
+        element: <RequestEntry />,
+      },
+      {
+        path: "users/:userId",
+        element: <ProfilePage />,
+      },
+    ],
+  },
+  {
+    path: "/login",
+    element: <LoginPage />,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <LoginPage />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

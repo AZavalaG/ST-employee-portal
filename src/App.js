@@ -1,10 +1,18 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
+import { Helmet } from "react-helmet";
+
 const App = () => {
 
   return (
-    <div className="app">
-      <HomePage name="User" />
-    </div>
+    <>
+      <Helmet>
+        <title>Welcome! | Employee Portal</title>
+      </Helmet>
+      <div className="app">
+        <Outlet />
+      </div>
+    </>
   );
 };
 

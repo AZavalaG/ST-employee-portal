@@ -3,22 +3,32 @@ import styles from "./TimeEntry.module.css";
 import BackButton from "../../Assets/backCircule.jpg";
 import FowardButton from "../../Assets/fowardCircule.jpg";
 import { data } from "./dummyData";
-import { formateador, numeroDeSemana, semanasConDias } from "./functions";
 const TimeEntry = (props) => {
   const { type } = props;
   const [renderData, setRenderData] = useState(data);
   const [week, setWeek] = useState(null);
-  const [selectData, setselectData] = useState([]);
+  const [formatRender, setformatRender] = useState(null);
   useEffect(() => {
-    const numeroDeSemanaActual = numeroDeSemana(new Date());
-    setWeek(numeroDeSemanaActual);
-    const today = new Date();
-    const inicio = new Date(today.getFullYear(), 0, 1);
-    const fin = new Date(today.getFullYear() + 1, 0, 1);
-    setselectData(semanasConDias(inicio, fin));
+    var today = new Date();
+    var year = today.getFullYear();
+    var month = today.getMonth();
+    var day = today.getDate();
+    var dateformat = year + "/" + (month + 1) + "/" + day;
+    var dia = month + 1 + "/" + day + "/" + year;
+    setWeek(dateformat);
+    setformatRender(dia);
   }, []);
-  const addOrSubtractWeek = (element) => {
-    setWeek(week + element);
+  const addOrSubtractWeek = (days) => {
+    debugger;
+    let date = new Date(formatRender);
+    date.setDate(date.getDate() + days);
+    var year = date.getFullYear();
+    var month = date.getMonth();
+    var day = date.getDate();
+    var dateformat = year + "/" + (month + 1) + "/" + day;
+    var dia = month + 1 + "/" + day + "/" + year;
+    setWeek(dateformat);
+    setformatRender(dia);
   };
   const handleVisibility = (nameProyect) => {
     let newData = [...renderData];
@@ -32,6 +42,7 @@ const TimeEntry = (props) => {
     }
     setRenderData(newData);
   };
+  
 
   return (
     <div className={styles.layout}>
@@ -41,36 +52,16 @@ const TimeEntry = (props) => {
           <div
             className={styles.arrowButtonBack}
             onClick={() => {
-              addOrSubtractWeek(-1);
+              addOrSubtractWeek(-7);
             }}
           >
             <img src={BackButton} alt="" />
           </div>
-          <select
-            type="date"
-            className={styles.calenderInput}
-            value={week}
-            onChange={(e) => {
-              setWeek(e.target.value);
-            }}
-          >
-            {selectData.length > 0
-              ? selectData.map((date) => (
-                  <option value={date.numSemana}>
-                    {"Semana " +
-                      date.numSemana +
-                      ": Inicio " +
-                      formateador(JSON.parse(date.inicio)) +
-                      " al " +
-                      formateador(JSON.parse(date.fin))}
-                  </option>
-                ))
-              : null}
-          </select>
+          <input type="date" className={styles.calenderInput} value={week}></input>
           <div
             className={styles.arrowButtonFoward}
             onClick={() => {
-              addOrSubtractWeek(1);
+              addOrSubtractWeek(7);
             }}
           >
             <img src={FowardButton} alt="" />
@@ -147,10 +138,8 @@ const TimeEntry = (props) => {
                         display: proyect.visible ? "inline-flex" : "none",
                       }}
                     >
-                      <td className={styles.longHeaderTask}>
-                        <span style={{ width: "30%" }} />
-                        {task.taskName}
-                      </td>
+                    
+                      <td className={styles.longHeaderTask}><span style={{ width: "30%" }} />{task.taskName}</td>
                       <td className={styles.smallHeader}>
                         <input
                           type={type === "request" ? "number" : "text"}

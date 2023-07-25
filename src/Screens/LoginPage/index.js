@@ -29,5 +29,3 @@ const LoginPage = () => {
 }
  
 export default LoginPage;
-
-// TODO: Complete Login Page

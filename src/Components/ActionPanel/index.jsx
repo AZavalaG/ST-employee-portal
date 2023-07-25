@@ -8,14 +8,21 @@ import Footer from './Components/footer';
 import styles from './action-panel.module.css';
 
 
-const ActionPanel = ({children}) => {
+const ActionPanel = (props) => {
+
+  const sampleUser = {
+    "id": "1213214123",
+    "name" : "Name LastName"
+  }
+  
+
   return ( 
     <div className={styles.actionPanelContainer}>
       <AppHeader appName="Employee Portal" />
-      <ActionInformation name="Name Last Name" cell="Célula 1" />
+      <ActionInformation user={sampleUser} />
       <SearchBox />
       <div className={styles.actionPanelContent}>
-        {children}
+        {props.children}
       </div>
       <Footer />
     </div>

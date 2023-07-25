@@ -1,0 +1,22 @@
+.itemListsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.itemListsContainer > h3 {
+    color: #4049BF;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.itemListsContainerList {
+    background: white;
+    width: 96%;
+    margin-top: 1rem;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}

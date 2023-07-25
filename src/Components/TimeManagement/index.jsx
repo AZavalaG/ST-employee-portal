@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styles from "./timeManagement.module.css";
-import ItemCard from "../ItemCard";
 import TimeCardDetails from "../TimeCardDetails";
 
 const TimeManagement = (props) => {
@@ -147,17 +146,17 @@ const TimeManagement = (props) => {
             />
           </div>
           <div className={styles.columnListRight}>
-            <ItemCard
+            <TimeCardDetails
               status={"Rejected"}
               subtitle={"holyday"}
               title={"JUNE 2023"}
             />
-            <ItemCard
+            <TimeCardDetails
               status={"Approved"}
               subtitle={"holyday"}
               title={"JUNE 2023"}
             />
-            <ItemCard
+            <TimeCardDetails
               status={"Pendig"}
               subtitle={"holyday"}
               title={"JUNE 2023"}
@@ -174,6 +173,7 @@ const TimeManagement = (props) => {
               timeCardDate="April 3-7 2023"
               practice="ServiceNow"
               title={"APRIL 2023"}
+              type="Manager"
               status={"Rejected"}
             />
             <TimeCardDetails
@@ -183,6 +183,7 @@ const TimeManagement = (props) => {
               practice="ServiceNow"
               title={"APRIL 2023"}
               status={"Approved"}
+              type="Manager"
             />
             <TimeCardDetails
               name="Name"
@@ -191,71 +192,9 @@ const TimeManagement = (props) => {
               practice="ServiceNow"
               title={"APRIL 2023"}
               status={"Pending"}
+              type="Manager"
             />
-            <TimeCardDetails
-              name="Name"
-              lastName="Last Name"
-              timeCardDate="April 3-7 2023"
-              practice="ServiceNow"
-              title={"APRIL 2023"}
-              status={"Rejected"}
-            />
-            <TimeCardDetails
-              name="Name"
-              lastName="Last Name"
-              timeCardDate="April 3-7 2023"
-              practice="ServiceNow"
-              title={"APRIL 2023"}
-              status={"Approved"}
-            />
-            <TimeCardDetails
-              name="Name"
-              lastName="Last Name"
-              timeCardDate="April 3-7 2023"
-              practice="ServiceNow"
-              title={"APRIL 2023"}
-              status={"Pending"}
-            />
-            <TimeCardDetails
-              name="Name"
-              lastName="Last Name"
-              timeCardDate="April 3-7 2023"
-              practice="ServiceNow"
-              title={"APRIL 2023"}
-              status={"Approved"}
-            />
-            <TimeCardDetails
-              name="Name"
-              lastName="Last Name"
-              timeCardDate="April 3-7 2023"
-              practice="ServiceNow"
-              title={"APRIL 2023"}
-              status={"Pending"}
-            />
-            <TimeCardDetails
-              name="Name"
-              lastName="Last Name"
-              timeCardDate="April 3-7 2023"
-              practice="ServiceNow"
-              title={"APRIL 2023"}
-              status={"Pending"}
-            />
-            <TimeCardDetails
-              name="Name"
-              lastName="Last Name"
-              timeCardDate="April 3-7 2023"
-              practice="ServiceNow"
-              title={"APRIL 2023"}
-              status={"Approved"}
-            />
-            <TimeCardDetails
-              name="Name"
-              lastName="Last Name"
-              timeCardDate="April 3-7 2023"
-              practice="ServiceNow"
-              title={"APRIL 2023"}
-              status={"Pending"}
-            />
+          
           </div>
         </div>
       )}

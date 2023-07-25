@@ -1,64 +1,47 @@
-.layout {
-  width: 498px;
-  height: 51px;
-  flex-shrink: 0;
-  border-radius: 5px;
-  background: var(--gray-3, #d0d0d0);
-  margin: 15px auto;
-  display: inline-flex;
-  align-items: center;
+.itemCard {
+    background: #D0D0D0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 8px 0;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    cursor: pointer;
 }
-.layout:hover {
-  cursor: pointer;
-  background: var(--gray-3, #ababab);
+
+.itemCard:hover,
+.itemCard:active {
+    background: #909090;
 }
-.titleItemCard {
-  color: var(--gray-1, #393939);
-  font-size: 20px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin-left: 28px;
-  width: 67%;
+
+.itemCard > h4 {
+    color: #393939;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
 }
-.titleWithSubtitleItemCard {
-  color: var(--gray-1, #393939);
-  font-size: 16px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  width: 33%;
-  margin-left: 26px;
+
+.itemCard > h5 {
+    color: #393939;
+    font-size: 0.7rem;
+    font-family: 'Roboto', sans-serif;
 }
-.pendig .approved .rejected{
-    width: 33%;
+
+.itemCard > span {
+    font-size: 0.7rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
+
 .pendig {
-  color: var(--gray-2, #979797);
-  text-align: right;
-  font-size: 16px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+    color: #979797;
 }
+
 .approved {
-  color: var(--blue, #4049bf);
-  text-align: right;
-  font-size: 16px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+    color: #4049BF;
 }
+
 .rejected {
-  color: var(--error, #ff5c60);
-  text-align: right;
-  font-size: 16px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+    color: #FF5C60;
 }

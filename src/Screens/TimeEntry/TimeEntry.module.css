@@ -27,7 +27,7 @@
   margin-left: 32px;
 }
 .calenderInput {
-  width: 450px;
+  width: 143px;
   height: 33px;
   flex-shrink: 0;
   border-radius: 5px;
@@ -35,11 +35,6 @@
   background: #d9d9d9;
   padding-left: 11px;
   padding-right: 8px;
-  font-size: 20px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
 }
 .arrowButtonBack {
   margin-top: 6px;

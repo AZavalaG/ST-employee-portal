@@ -1,0 +1,23 @@
+.timeManagementContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.timeManagementContainer > h1 {
+  color: #6423B5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+}
+
+.timeManagementListsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+}
